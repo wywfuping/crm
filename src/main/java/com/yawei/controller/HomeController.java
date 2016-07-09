@@ -53,4 +53,11 @@ public class HomeController {
         }
         return "redirect:/";
     }
+
+    @RequestMapping(value = "/logout",method = RequestMethod.GET)
+    public String logout(RedirectAttributes redirectAttributes){
+        SecurityUtils.getSubject().logout();
+        redirectAttributes.addFlashAttribute("message",new FlshMessage("你已安全退出"));
+        return "redirect:/";
+    }
 }

@@ -42,15 +42,15 @@
                     <form method="post" id="changePasswordForm">
                         <div class="form-group">
                             <label>原始密码</label>
-                            <input type="text" class="form-control" name="oldpassword">
+                            <input type="password" class="form-control" name="oldpassword">
                         </div>
                         <div class="form-group">
                             <label>新密码</label>
-                            <input type="text" id="newpassword" class="form-control" name="newpassword">
+                            <input type="password" id="newpassword" class="form-control" name="newpassword">
                         </div>
                         <div class="form-group">
                             <label>确认密码</label>
-                            <input type="text" class="form-control" name="repetpassword">
+                            <input type="password" class="form-control" name="repetpassword">
                         </div>
                     </form>
                 </div>
@@ -120,7 +120,6 @@
         $("#editBtn").click(function(){
             $("#changePasswordForm").submit();
         });
-
     });
 
 </script>

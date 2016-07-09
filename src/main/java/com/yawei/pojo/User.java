@@ -1,16 +1,20 @@
 package com.yawei.pojo;
 
-
 import java.io.Serializable;
+import java.sql.Timestamp;
 
 public class User implements Serializable{
-    private static final long serialVersionUID = -8889896647100355614L;
+
+    private static final long serialVersionUID = -2949882892124045386L;
     private Integer id;
     private String username;
     private String password;
-    private String lastaccesstime;
-    private String lastaccessip;
-    private String email;
+    private String realname;
+    private String weixin;
+    private Timestamp creattime;
+    private Integer roleid;
+    private Boolean enable;
+
 
     public Integer getId() {
         return id;
@@ -36,27 +40,43 @@ public class User implements Serializable{
         this.password = password;
     }
 
-    public String getLastaccesstime() {
-        return lastaccesstime;
+    public String getRealname() {
+        return realname;
     }
 
-    public void setLastaccesstime(String lastaccesstime) {
-        this.lastaccesstime = lastaccesstime;
+    public void setRealname(String realname) {
+        this.realname = realname;
     }
 
-    public String getLastaccessip() {
-        return lastaccessip;
+    public String getWeixin() {
+        return weixin;
     }
 
-    public void setLastaccessip(String lastaccessip) {
-        this.lastaccessip = lastaccessip;
+    public void setWeixin(String weixin) {
+        this.weixin = weixin;
     }
 
-    public String getEmail() {
-        return email;
+    public Timestamp getCreattime() {
+        return creattime;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCreattime(Timestamp creattime) {
+        this.creattime = creattime;
+    }
+
+    public Integer getRoleid() {
+        return roleid;
+    }
+
+    public void setRoleid(Integer roleid) {
+        this.roleid = roleid;
+    }
+
+    public Boolean getEnable() {
+        return enable;
+    }
+
+    public void setEnable(Boolean enable) {
+        this.enable = enable;
     }
 }

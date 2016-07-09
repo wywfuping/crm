@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - bookstore@localhost" uuid="705ebd90-02de-44b0-b658-cc8363d7e735">
+    <data-source name="MySQL - yawei_crm@localhost" uuid="5335ef71-8694-48e8-a383-13b3a87c01b3">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <schema-pattern>bookstore.*</schema-pattern>
-      <default-schemas>bookstore.*</default-schemas>
+      <schema-pattern>yawei_crm.*</schema-pattern>
+      <default-schemas>yawei_crm.*</default-schemas>
     </data-source>
   </component>
 </project>

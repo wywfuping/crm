@@ -101,6 +101,13 @@
       <version>4.2.6.RELEASE</version>
     </dependency>
 
+    <!--Shiro-->
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-all</artifactId>
+      <version>1.2.4</version>
+    </dependency>
+
     <!--other-->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -118,6 +125,12 @@
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
       <version>3.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>1.10</version>
     </dependency>
 
     <dependency>

@@ -8,7 +8,7 @@ public class UserLog implements Serializable{
     private Integer id;
     private Integer userid;
     private String logintime;
-    private String logip;
+    private String loginip;
 
     public Integer getId() {
         return id;
@@ -34,11 +34,11 @@ public class UserLog implements Serializable{
         this.logintime = logintime;
     }
 
-    public String getLogip() {
-        return logip;
+    public String getLoginip() {
+        return loginip;
     }
 
-    public void setLogip(String logip) {
-        this.logip = logip;
+    public void setLoginip(String loginip) {
+        this.loginip = loginip;
     }
 }

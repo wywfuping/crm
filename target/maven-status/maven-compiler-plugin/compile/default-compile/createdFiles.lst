@@ -7,6 +7,7 @@ com\yawei\pojo\Role.class
 com\yawei\pojo\UserLog.class
 com\yawei\mapper\UserMapper.class
 com\yawei\service\ShiroRealm.class
+com\yawei\dto\DataTablesResult.class
 com\yawei\Test.class
 com\yawei\mapper\RoleMapper.class
 com\yawei\util\ShiroUtil.class

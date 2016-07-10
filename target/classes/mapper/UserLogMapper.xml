@@ -6,7 +6,28 @@
     <cache/>
     <insert id="save">
         insert into t_userlog (logintime, loginip, userid)
-        values (#{logintime},#{logip},#{userid});
+        values (#{logintime},#{loginip},#{userid});
     </insert>
 
+    <select id="findByParam" resultType="UserLog">
+        select * from t_userlog
+        <where>
+            <if test="userId != null and userId != ''">
+                userid=#{userId}
+            </if>
+        </where>
+        order by id desc
+        <if test="start != null and start != '' and length != null and length != ''">
+            limit ${start},${length}
+        </if>
+    </select>
+
+    <select id="countByParam" resultType="Long">
+        select count(*) from t_userlog
+        <where>
+            <if test="userId != null and userId != ''">
+                userid=#{userId}
+            </if>
+        </where>
+    </select>
 </mapper>

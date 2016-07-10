@@ -1,7 +1,9 @@
 package com.yawei.controller;
 
+import com.yawei.dto.DataTablesResult;
 import com.yawei.exception.NotFindException;
 import com.yawei.pojo.User;
+import com.yawei.pojo.UserLog;
 import com.yawei.service.UserService;
 import com.yawei.util.ShiroUtil;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -12,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.inject.Inject;
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller
 @RequestMapping("/user")
@@ -42,5 +46,24 @@ public class UserController {
         }else {
             throw new NotFindException();
         }
+    }
+
+    @RequestMapping(value = "/log",method = RequestMethod.GET)
+    public String showUserLog(){
+        return "setting/loglist";
+
+    }
+
+
+    @RequestMapping(value = "/log/load",method = RequestMethod.GET)
+    @ResponseBody
+    public DataTablesResult userLogLoad(HttpServletRequest request){
+        String draw = request.getParameter("draw");
+        String start = request.getParameter("start");
+        String length = request.getParameter("length");
+
+        List<UserLog> userLogList = userService.findCurrentUserLog(start,length);
+        Long count = userService.findCurrentUserLogCount();
+        return new DataTablesResult<>(draw,userLogList,count,count);
     }
 }

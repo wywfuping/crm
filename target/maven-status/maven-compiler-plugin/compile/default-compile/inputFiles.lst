@@ -7,6 +7,7 @@ D:\myidea\project\crm\src\main\java\com\yawei\controller\UserController.java
 D:\myidea\project\crm\src\main\java\com\yawei\util\Strings.java
 D:\myidea\project\crm\src\main\java\com\yawei\exception\NotFindException.java
 D:\myidea\project\crm\src\main\java\com\yawei\controller\AdminController.java
+D:\myidea\project\crm\src\main\java\com\yawei\dto\JSONResult.java
 D:\myidea\project\crm\src\main\java\com\yawei\pojo\Role.java
 D:\myidea\project\crm\src\main\java\com\yawei\mapper\RoleMapper.java
 D:\myidea\project\crm\src\main\java\com\yawei\mapper\UserMapper.java

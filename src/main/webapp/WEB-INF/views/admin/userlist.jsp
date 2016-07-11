@@ -114,6 +114,58 @@
         </div>
     </div>
 </div>
+
+<%--编辑弹出框--%>
+<div class="modal fade" id="editModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">新增用户</h4>
+            </div>
+            <div class="modal-body">
+                <form id="editForm">
+                    <input type="hidden" name="id" id="user_id">
+                    <div class="form-group">
+                        <label>账号(用于系统登录)</label>
+                        <input type="text" name="username" class="form-control" id="user_username">
+                    </div>
+                    <div class="form-group">
+                        <label>员工姓名(真实姓名)</label>
+                        <input type="text" name="realname" class="form-control" id="user_realname">
+                    </div>
+                    <div class="form-group">
+                        <label>密码(默认6个0)</label>
+                        <input type="text" name="password" class="form-control" id="user_password" value="000000">
+                    </div>
+                    <div class="form-group">
+                        <label>微信号</label>
+                        <input type="text" name="weixin" class="form-control" id="user_weixin">
+                    </div>
+                    <div class="form-group">
+                        <label>角色</label>
+                        <select class="form-control" name="roleid" id="user_roleid">
+                            <c:forEach items="${roleList}" var="role">
+                                <option value="${role.id}">${role.rolename}</option>
+                            </c:forEach>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>状态</label>
+                        <select class="form-control" name="enable" id="user_enable">
+                                <option value="true">正常</option>
+                                <option value="false">禁用</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="editBtn">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- jQuery 2.2.3 -->
 <script src="/static/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
@@ -150,8 +202,12 @@
                     return day;
                 }},
                 {"data":function(row){
+                    if(row.username=="admin"){
+                        return "";
+                    }else {
                         return "<a href='#' class='resetPwd' rel='"+row.id+"'>重置密码</a>&nbsp;&nbsp;" +
                                 "<a href='#' class='edit' rel='"+row.id+"'>编辑</a>";
+                    }
                  }}
             ],
             "language": {
@@ -173,72 +229,71 @@
 
         //新增用户
         $("#newForm").validate({
-            errorClass:"text-danger",
-            errorElement:"span",
-            rules:{
-                username:{
-                    required:true,
-                    rangelength:[3,20],
-                    remote:"/admin/user/checkusername"
-                },
-                realname:{
-                    required:true,
-                    rangelength:[2,20]
-                },
-                weixin:{
-                    required:true
-                },
-                password:{
-                    required:true,
-                    rangelength:[6,18]
-                }
+        errorClass:"text-danger",
+        errorElement:"span",
+        rules:{
+            username:{
+                required:true,
+                rangelength:[3,20],
+                remote:"/admin/user/checkusername"
             },
-            messages:{
-                username:{
-                    required:"请输入用户名",
-                    rangelength:"用户名长度为3~20位",
-                    remote:"用户名已被占用"
-                },
-                realname:{
-                    required:"请输入真实姓名",
-                    rangelength:"真实姓名长度为2~20位"
-                },
-                weixin:{
-                    required:"请输入微信号"
-                },
-                password:{
-                    required:"请输入密码",
-                    rangelength:"密码长度为6~18位"
-                }
+            realname:{
+                required:true,
+                rangelength:[2,20]
             },
-            submitHandler:function(form){
-                $.post("/admin/users/new",$(form).serialize()).done(function(data){
-                    if(data=="success"){
-                        $("#newModal").modal("hide");
-                        dataTable.ajax.reload();
-                    }
-                }).fail(function () {
-                    alert("服务器异常")
-                });
+            weixin:{
+                required:true
+            },
+            password:{
+                required:true,
+                rangelength:[6,18]
             }
-        });
-        $("#newBtn").click(function(){
-            $("#newForm")[0].reset();
-            $("#newModal").modal({
-                show:true,
-                backdrop:'static',
-                keyboard:false
+        },
+        messages:{
+            username:{
+                required:"请输入用户名",
+                rangelength:"用户名长度为3~20位",
+                remote:"用户名已被占用"
+            },
+            realname:{
+                required:"请输入真实姓名",
+                rangelength:"真实姓名长度为2~20位"
+            },
+            weixin:{
+                required:"请输入微信号"
+            },
+            password:{
+                required:"请输入密码",
+                rangelength:"密码长度为6~18位"
+            }
+        },
+        submitHandler:function(form){
+            $.post("/admin/users/new",$(form).serialize()).done(function(data){
+                if(data=="success"){
+                    $("#newModal").modal("hide");
+                    dataTable.ajax.reload();
+                }
+            }).fail(function () {
+                alert("服务器异常")
             });
+        }
+    });
+    $("#newBtn").click(function(){
+        $("#newForm")[0].reset();
+        $("#newModal").modal({
+            show:true,
+            backdrop:'static',
+            keyboard:false
         });
+    });
 
-        $("#saveBtn").click(function(){
-            $("#newForm").submit();
-        });
+    $("#saveBtn").click(function(){
+        $("#newForm").submit();
     });
 
 
     //重置密码
-    /*$(document).delegate(".resetPwd","click",function(){
+    $(document).delegate(".resetPwd","click",function(){
         var id = $(this).attr("rel");
         if(confirm("确定要重置密码为000000吗?")){
             $.post("/admin/users/resetPassword",{"id":id}).done(function (data) {
@@ -249,10 +304,68 @@
                 alert("服务器异常");
             });
         }
-    });*/
+    });
+
     //编辑员工列表
+    $("#editForm").validate({
+        errorClass:"text-danger",
+        errorElement:"span",
+        rules:{
+            realname:{
+                required:true,
+                rangelength:[2,20]
+            },
+            weixin:{
+                required:true
+            }
+        },
+        messages:{
+            realname:{
+                required:"请输入真实姓名",
+                rangelength:"真实姓名长度为2~20位"
+            },
+            weixin:{
+                required:"请输入微信号"
+            }
+        },
+        submitHandler:function(form){
+            $.post("/admin/users/edit",$(form).serialize()).done(function(data){
+                if(data=="success"){
+                    $("#editModal").modal("hide");
+                    dataTable.ajax.reload();
+                }
+            }).fail(function () {
+                alert("服务器异常")
+            });
+        }
+    });
+    $(document).delegate(".edit","click",function(){
+        var id = $(this).attr("rel");
+            $.get("/admin/users/"+id+".json").done(function (result) {
+                if(result.state == "success"){
+                    $("#user_id").val(result.data.id);
+                    $("#user_username").val(result.data.username);
+                    $("#user_realname").val(result.data.realname);
+                    $("#user_weixin").val(result.data.weixin);
+                    $("#user_roleid").val(result.data.roleid);
+                    $("#user_enable").val(result.data.enable.toString());
 
-
+                    $("#editModal").modal({
+                        show:true,
+                        backdrop:'static',
+                        keyboard:false
+                    });
+                }else{
+                    alert(result.message);
+                }
+            }).fail(function () {
+                alert("服务器异常");
+            });
+        });
+        $("#editBtn").click(function(){
+            $("#editForm").submit();
+        });
+    });
 </script>
 </body>
 </html>

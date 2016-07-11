@@ -33,6 +33,9 @@
             </if>
         </where>
     </select>
+    <select id="findUserById" resultType="User">
+        select * from t_user WHERE id=#{id}
+    </select>
 
     <update id="updateUser">
         update t_user set username = #{username},password=#{password},weixin=#{weixin},enable=#{enable}

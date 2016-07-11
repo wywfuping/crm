@@ -118,10 +118,7 @@ public class UserService {
     @Transactional
     public void saveUser(User user) {
         user.setEnable(true);
-        System.out.println(11111111);
-        System.out.println(user);
         user.setPassword(DigestUtils.md5Hex(user.getPassword()));
-        System.out.println(3333333);
         //TODO 在微信公众平台创建账号
         userMapper.save(user);
     }
@@ -132,5 +129,34 @@ public class UserService {
      */
     public List<Role> findAllRole() {
         return roleMapper.findAll();
+    }
+
+    /**
+     * 重置密码（默认6个0）
+     * @param id
+     */
+    public void resetUserPassword(Integer id) {
+        User user=userMapper.findUserById(id);
+        if(user!=null){
+            user.setPassword(DigestUtils.md5Hex("000000"));
+            userMapper.updateUser(user);
+        }
+    }
+
+    /**
+     * 根据用户ID查找用户
+     * @param id
+     * @return
+     */
+    public User findUserById(Integer id) {
+        return userMapper.findUserById(id);
+    }
+
+    /**
+     * 编辑用户信息
+     * @param user
+     */
+    public void editUser(User user) {
+        userMapper.updateUser(user);
     }
 }

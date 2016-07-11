@@ -61,7 +61,7 @@
                            <th>操作</th>
                        </tr>
                        </thead>
-                       <tboby></tboby>
+                       <tboby> </tboby>
                    </table>
                </div>
            </div>
@@ -77,7 +77,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">新增用户</h4>
+                <h4 class="modal-title">新增用户</h4>
             </div>
             <div class="modal-body">
                 <form id="newForm">
@@ -91,7 +91,7 @@
                     </div>
                     <div class="form-group">
                         <label>密码(默认6个0)</label>
-                        <input type="text" name="realname" class="form-control" value="000000">
+                        <input type="text" name="password" class="form-control" value="000000">
                     </div>
                     <div class="form-group">
                         <label>微信号</label>
@@ -149,8 +149,9 @@
                     var day = moment(timestamp).format("YYYY-MM-DD HH:mm");
                     return day;
                 }},
-                {"data":function(){
-                        return "";
+                {"data":function(row){
+                        return "<a href='#' class='resetPwd' rel='"+row.id+"'>重置密码</a>&nbsp;&nbsp;" +
+                                "<a href='#' class='edit' rel='"+row.id+"'>编辑</a>";
                  }}
             ],
             "language": {
@@ -211,7 +212,7 @@
                 }
             },
             submitHandler:function(form){
-                $.post("/admin/users/new",$(form).serialize()).done(function (data) {
+                $.post("/admin/users/new",$(form).serialize()).done(function(data){
                     if(data=="success"){
                         $("#newModal").modal("hide");
                         dataTable.ajax.reload();
@@ -221,7 +222,7 @@
                 });
             }
         });
-        $("#newBtn").click(function () {
+        $("#newBtn").click(function(){
             $("#newForm")[0].reset();
             $("#newModal").modal({
                 show:true,
@@ -230,10 +231,27 @@
             });
         });
 
-        $("#saveBtn").click(function () {
+        $("#saveBtn").click(function(){
             $("#newForm").submit();
         });
     });
+
+
+    //重置密码
+    /*$(document).delegate(".resetPwd","click",function(){
+        var id = $(this).attr("rel");
+        if(confirm("确定要重置密码为000000吗?")){
+            $.post("/admin/users/resetPassword",{"id":id}).done(function (data) {
+                if(data=="success"){
+                    alert("密码重置成功");
+                }
+            }).fail(function () {
+                alert("服务器异常");
+            });
+        }
+    });*/
+    //编辑员工列表
+
 
 </script>
 </body>

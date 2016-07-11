@@ -6,7 +6,7 @@
     <cache/>
     <insert id="save">
         INSERT into t_user(username, password, weixin, roleid, enable, realname)
-        VALUES (#{username},#(password),#{weixin},#{roleid},#{enable},#{realname})
+        VALUES (#{username},#{password},#{weixin},#{roleid},#{enable},#{realname})
     </insert>
     <select id="findByUsername" resultType="User">
         select * from t_user WHERE username=#{username}

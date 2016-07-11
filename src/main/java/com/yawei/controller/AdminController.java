@@ -36,7 +36,7 @@ public class AdminController {
         String draw = request.getParameter("draw");
         String start = request.getParameter("start");
         String length = request.getParameter("length");
-        String keyword = request.getParameter("keyword");
+        String keyword = request.getParameter("search[value]");
         keyword = Strings.toUtf8(keyword);
 
         Map<String,Object> params = Maps.newHashMap();
@@ -71,7 +71,7 @@ public class AdminController {
      */
     @RequestMapping(value = "/users/new",method = RequestMethod.POST)
     @ResponseBody
-    public String saveUser(User user){
+    public String saveUser(User user) {
         userService.saveUser(user);
         return "success";
     }

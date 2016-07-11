@@ -10,6 +10,7 @@ import com.yawei.pojo.UserLog;
 import com.yawei.util.ShiroUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.joda.time.DateTime;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -114,9 +115,13 @@ public class UserService {
      * 新增用户
      * @param user
      */
+    @Transactional
     public void saveUser(User user) {
         user.setEnable(true);
+        System.out.println(11111111);
+        System.out.println(user);
         user.setPassword(DigestUtils.md5Hex(user.getPassword()));
+        System.out.println(3333333);
         //TODO 在微信公众平台创建账号
         userMapper.save(user);
     }

@@ -4,8 +4,34 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.yawei.mapper.UserMapper">
     <cache/>
+    <insert id="save">
+        INSERT into t_user(username, password, weixin, roleid, enable, realname)
+        VALUES (#{username},#(password),#{weixin},#{roleid},#{enable},#{realname})
+    </insert>
     <select id="findByUsername" resultType="User">
         select * from t_user WHERE username=#{username}
+    </select>
+    <select id="findByParam" resultType="User">
+        select t_user.*,t_role.id as 'role.id',t_role.rolename as 'role.rolename' from t_user
+        INNER join t_role ON t_user.roleid = t_role.id
+        <where>
+            <if test="keyword != null and keyword != ''">
+                username LIKE concat('%',#{keyword},'%') or realname LIKE concat('%',#{keyword},'%')
+            </if>
+        </where>
+        order by t_user.id desc
+        limit ${start},${length}
+    </select>
+    <select id="count" resultType="long">
+        select count(*) from t_user
+    </select>
+    <select id="countByParam" resultType="long">
+        select count(*) from t_user
+        <where>
+            <if test="keyword != null and keyword != ''">
+                username LIKE concat('%',#{keyword},'%') or realname LIKE concat('%',#{keyword},'%')
+            </if>
+        </where>
     </select>
 
     <update id="updateUser">

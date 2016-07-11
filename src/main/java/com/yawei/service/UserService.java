@@ -4,6 +4,7 @@ import com.google.common.collect.Maps;
 import com.yawei.mapper.RoleMapper;
 import com.yawei.mapper.UserLogMapper;
 import com.yawei.mapper.UserMapper;
+import com.yawei.pojo.Role;
 import com.yawei.pojo.User;
 import com.yawei.pojo.UserLog;
 import com.yawei.util.ShiroUtil;
@@ -48,6 +49,12 @@ public class UserService {
         userMapper.updateUser(user);
     }
 
+    /**
+     * 获取当前用户的登录日志
+     * @param start
+     * @param length
+     * @return
+     */
     public List<UserLog> findCurrentUserLog(String start, String length) {
         Map<String,Object> param = Maps.newHashMap();
 
@@ -58,9 +65,67 @@ public class UserService {
         return userLogMapper.findByParam(param);
     }
 
+    /**
+     * 获取当前用户的登录日志数量
+     * @return
+     */
     public Long findCurrentUserLogCount() {
         Map<String,Object> param = Maps.newHashMap();
         param.put("userId",ShiroUtil.getCurrentUserId());
         return userLogMapper.countByParam(param);
+    }
+
+    /**
+     * 根据参数来获取用户的列表
+     * @param params
+     * @return
+     */
+    public List<User> findUserListByParam(Map<String, Object> params) {
+        return userMapper.findByParam(params);
+    }
+
+    /**
+     * 获取用户的总数
+     * @return
+     */
+    public Long findUserCount() {
+        return userMapper.count();
+    }
+
+    /**
+     * 获取根据参数查询后的数量
+     * @param params
+     * @return
+     */
+    public Long findUserCountByParam(Map<String, Object> params) {
+        return userMapper.countByParam(params);
+    }
+
+    /**
+     * 根据用户名查找用户
+     * @param username
+     * @return
+     */
+    public User findUserByUsername(String username) {
+        return userMapper.findByUsername(username);
+    }
+
+    /**
+     * 新增用户
+     * @param user
+     */
+    public void saveUser(User user) {
+        user.setEnable(true);
+        user.setPassword(DigestUtils.md5Hex(user.getPassword()));
+        //TODO 在微信公众平台创建账号
+        userMapper.save(user);
+    }
+
+    /**
+     * 获取所有的角色
+     * @return
+     */
+    public List<Role> findAllRole() {
+        return roleMapper.findAll();
     }
 }

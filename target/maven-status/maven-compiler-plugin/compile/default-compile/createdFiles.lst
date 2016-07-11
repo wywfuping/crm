@@ -12,6 +12,7 @@ com\yawei\Test.class
 com\yawei\mapper\RoleMapper.class
 com\yawei\util\ShiroUtil.class
 com\yawei\pojo\User.class
+com\yawei\controller\AdminController.class
 com\yawei\controller\UserController.class
 com\yawei\service\UserService.class
 com\yawei\util\Strings.class

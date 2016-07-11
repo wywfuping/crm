@@ -11,8 +11,9 @@ public class User implements Serializable{
     private String password;
     private String realname;
     private String weixin;
-    private Timestamp creattime;
+    private Timestamp createtime;
     private Integer roleid;
+    private Role role;
     private Boolean enable;
 
 
@@ -56,12 +57,12 @@ public class User implements Serializable{
         this.weixin = weixin;
     }
 
-    public Timestamp getCreattime() {
-        return creattime;
+    public Timestamp getCreatetime() {
+        return createtime;
     }
 
-    public void setCreattime(Timestamp creattime) {
-        this.creattime = creattime;
+    public void setCreattime(Timestamp createtime) {
+        this.createtime = createtime;
     }
 
     public Integer getRoleid() {
@@ -78,5 +79,13 @@ public class User implements Serializable{
 
     public void setEnable(Boolean enable) {
         this.enable = enable;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 }

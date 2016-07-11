@@ -6,10 +6,11 @@ D:\myidea\project\crm\src\main\java\com\yawei\pojo\User.java
 D:\myidea\project\crm\src\main\java\com\yawei\controller\UserController.java
 D:\myidea\project\crm\src\main\java\com\yawei\util\Strings.java
 D:\myidea\project\crm\src\main\java\com\yawei\exception\NotFindException.java
+D:\myidea\project\crm\src\main\java\com\yawei\controller\AdminController.java
 D:\myidea\project\crm\src\main\java\com\yawei\pojo\Role.java
 D:\myidea\project\crm\src\main\java\com\yawei\mapper\RoleMapper.java
-D:\myidea\project\crm\src\main\java\com\yawei\service\ShiroRealm.java
 D:\myidea\project\crm\src\main\java\com\yawei\mapper\UserMapper.java
+D:\myidea\project\crm\src\main\java\com\yawei\service\ShiroRealm.java
 D:\myidea\project\crm\src\main\java\com\yawei\util\ServletUtil.java
 D:\myidea\project\crm\src\main\java\com\yawei\controller\HomeController.java
 D:\myidea\project\crm\src\main\java\com\yawei\util\ShiroUtil.java

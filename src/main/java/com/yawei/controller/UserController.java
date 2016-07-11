@@ -66,4 +66,5 @@ public class UserController {
         Long count = userService.findCurrentUserLogCount();
         return new DataTablesResult<>(draw,userLogList,count,count);
     }
+
 }

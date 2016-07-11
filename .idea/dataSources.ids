@@ -39,7 +39,7 @@
         <comment>微信ID</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="12" parent="3" name="creattime">
+      <column id="12" parent="3" name="createtime">
         <comment>创建时间</comment>
         <data-type>timestamp</data-type>
         <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>

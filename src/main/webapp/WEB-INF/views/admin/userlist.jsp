@@ -197,7 +197,7 @@
                     return "<span class='label label-danger'>禁用</span>";
                 }},
                 {"data":function(row){
-                    var timestamp = row.creattime;
+                    var timestamp = row.createtime;
                     var day = moment(timestamp).format("YYYY-MM-DD HH:mm");
                     return day;
                 }},

@@ -29,6 +29,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/password",method = RequestMethod.POST)
+    @ResponseBody
     public String editPassword(String password){
         userService.changeUserPassword(password);
         return "success";

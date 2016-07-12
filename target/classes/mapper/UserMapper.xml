@@ -38,7 +38,7 @@
     </select>
 
     <update id="updateUser">
-        update t_user set username = #{username},password=#{password},weixin=#{weixin},enable=#{enable}
+        update t_user set username=#{username},password=#{password},weixin=#{weixin},enable=#{enable}
         where id=#{id}
     </update>
 

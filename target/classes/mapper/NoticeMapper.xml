@@ -7,4 +7,11 @@
         insert into t_notice (title, context, realname, userid)
         values (#{title},#{context},#{realname},#{userid});
     </insert>
+
+    <select id="findAllNotice" resultType="Notice">
+        select * from t_notice
+    </select>
+    <select id="count" resultType="java.lang.Long">
+        select count(*) from t_notice
+    </select>
 </mapper>

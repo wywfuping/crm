@@ -16,8 +16,6 @@ public class User implements Serializable{
     private Role role;
     private Boolean enable;
 
-    public User() {
-    }
 
     public Integer getId() {
         return id;
@@ -91,16 +89,4 @@ public class User implements Serializable{
         this.role = role;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", realname='" + realname + '\'' +
-                ", weixin='" + weixin + '\'' +
-                ", createtime=" + createtime +
-                ", roleid=" + roleid +
-                '}';
-    }
 }

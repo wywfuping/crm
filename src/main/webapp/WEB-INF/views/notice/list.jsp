@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/static/dist/css/AdminLTE.min.css">
 
     <link rel="stylesheet" href="/static/dist/css/skins/skin-blue.min.css">
-
+    <link rel="stylesheet" href="/static/plugins/datatables/css/dataTables.bootstrap.min.css">
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -50,13 +50,23 @@
                     </div>
                     </shiro:hasRole>
                 </div>
-
+                <div class="box-body">
+                    <table class="table" id="noticeTable">
+                        <thead>
+                        <tr>
+                            <th>公告标题</th>
+                            <th>公告内容</th>
+                            <th>发表人</th>
+                            <th>发表时间</th>
+                        </tr>
+                        </thead>
+                        <tboby> </tboby>
+                    </table>
+                </div>
             </div>
 
         </section>
-        <!-- /.content -->
     </div>
-    <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
 
@@ -68,7 +78,47 @@
 <script src="/static/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/static/dist/js/app.min.js"></script>
+<script src="/static/plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script src="/static/plugins/datatables/js/dataTables.bootstrap.min.js"></script>
+<script src="/static/plugins/moment/moment.js"></script>
 
+<script>
+    $(function(){
+        var dataTable = $("#noticeTable").DataTable({
+            serverSide:true,
+            searching:false,
+            ordering:false,
+            ajax:"/notice/list/load",
+            columns:[
+                {"data":"title"},
+                {"data":"context"},
+                {"data":"realname"},
+                {"data":function(row){
+                    var timestamp = row.createtime;
+                    var day = moment(timestamp).format("YYYY-MM-DD HH:mm");
+                    return day;
+                }}
+            ],
+            "language": {
+                "search": "请输入公告标题:",
+                "zeroRecords": "没有匹配的数据",
+                "lengthMenu": "显示 _MENU_ 条数据",
+                "info": "显示_START_ 到 _END_ 条数据,共 _TOTAL_ 条数据",
+                "infoFiltered": "(从 _MAX_ 条数据筛选)",
+                "loadingRecords": "加载中...",
+                "processing": "处理中...",
+                "paginate": {
+                    "first": "首页",
+                    "last": "末页",
+                    "next": "下一页",
+                    "previous": "上一页"
+                }
+            }
+
+        });
+    });
+
+</script>
 </body>
 </html>
 

@@ -55,7 +55,6 @@
                         <thead>
                         <tr>
                             <th>公告标题</th>
-                            <th>公告内容</th>
                             <th>发表人</th>
                             <th>发表时间</th>
                         </tr>
@@ -90,8 +89,9 @@
             ordering:false,
             ajax:"/notice/list/load",
             columns:[
-                {"data":"title"},
-                {"data":"context"},
+                {"data": function (row) {
+                    return "<a href='notice/"+row.id+"'>"+row.title+"</a>";
+                }},
                 {"data":"realname"},
                 {"data":function(row){
                     var timestamp = row.createtime;
@@ -100,7 +100,6 @@
                 }}
             ],
             "language": {
-                "search": "请输入公告标题:",
                 "zeroRecords": "没有匹配的数据",
                 "lengthMenu": "显示 _MENU_ 条数据",
                 "info": "显示_START_ 到 _END_ 条数据,共 _TOTAL_ 条数据",
@@ -114,7 +113,6 @@
                     "previous": "上一页"
                 }
             }
-
         });
     });
 

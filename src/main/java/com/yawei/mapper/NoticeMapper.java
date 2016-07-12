@@ -11,4 +11,6 @@ public interface NoticeMapper {
     List<Notice> findAllNotice();
 
     Long count();
+
+    Notice findNoticeById(Integer id);
 }

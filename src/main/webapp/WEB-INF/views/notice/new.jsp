@@ -79,7 +79,12 @@
 <script>
     $(function(){
         var editor = new Simditor({
-            textarea: $("#context")
+            textarea: $("#context"),
+            placeholder: '请写入公告内容',
+            upload:{
+                url:'/notice/img/upload',
+                fileKey:'file'
+            }
         });
     });
 

@@ -10,8 +10,12 @@
 
     <select id="findAllNotice" resultType="Notice">
         select * from t_notice
+        order by id desc
     </select>
     <select id="count" resultType="java.lang.Long">
         select count(*) from t_notice
+    </select>
+    <select id="findNoticeById" resultType="com.yawei.pojo.Notice">
+        select * from t_notice where id=#{id}
     </select>
 </mapper>

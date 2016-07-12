@@ -23,8 +23,8 @@
         <ul class="sidebar-menu">
 
             <shiro:hasAnyRoles name="经理,员工">
-                <li class="active"><a href="#"><i class="fa fa-home"></i> <span>首页</span></a></li>
-                <li><a href="#"><i class="fa fa-bullhorn"></i> <span>公告</span></a></li>
+                <li class="${param.menu == 'home' ? 'active':''}"><a href="/home"><i class="fa fa-home"></i> <span>首页</span></a></li>
+                <li class="${param.menu == 'notice' ? 'active':''}"><a href="/notice"><i class="fa fa-bullhorn"></i> <span>公告</span></a></li>
                 <li><a href="#"><i class="fa fa-building-o"></i> <span>项目管理</span></a></li>
                 <li><a href="#"><i class="fa fa-users"></i> <span>客户管理</span></a></li>
                 <li><a href="#"><i class="fa fa-bar-chart"></i> <span>统计</span></a></li>

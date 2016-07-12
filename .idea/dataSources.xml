@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="4145273086">
+  <component name="DataSourceManagerImpl" format="xml" hash="2316538532">
     <data-source source="LOCAL" name="MySQL - yawei_crm@localhost" uuid="5335ef71-8694-48e8-a383-13b3a87c01b3">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>

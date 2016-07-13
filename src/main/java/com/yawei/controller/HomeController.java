@@ -60,4 +60,9 @@ public class HomeController {
         redirectAttributes.addFlashAttribute("message",new FlshMessage("你已安全退出"));
         return "redirect:/";
     }
+
+    @RequestMapping(value = "/403")
+    public String error403(){
+        return "error/403";
+    }
 }

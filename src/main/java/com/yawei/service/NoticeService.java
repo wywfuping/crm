@@ -19,7 +19,7 @@ public class NoticeService {
     @Inject
     private NoticeMapper noticeMapper;
 
-    @Value("${imgPath}")
+    @Value("${filePath}")
     private String imgSavePath;
 
     /**

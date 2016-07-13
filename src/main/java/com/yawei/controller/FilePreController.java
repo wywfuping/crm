@@ -12,7 +12,7 @@ import java.io.*;
 
 @Controller
 public class FilePreController {
-    @Value("${imgPath}")
+    @Value("${filePath}")
     private String filePath;
 
     @RequestMapping(value = "/pre/{fileName}")

@@ -1,10 +1,13 @@
+com\yawei\pojo\Document.class
 com\yawei\exception\NotFindException.class
 com\yawei\dto\FlshMessage.class
 com\yawei\mapper\UserLogMapper.class
 com\yawei\pojo\UserLog.class
 com\yawei\mapper\UserMapper.class
 com\yawei\dto\JSONResult.class
+com\yawei\mapper\DocumentMapper.class
 com\yawei\controller\NoticeController.class
+com\yawei\controller\DocumentController.class
 com\yawei\dto\DataTablesResult.class
 com\yawei\controller\FilePreController.class
 com\yawei\Test.class
@@ -19,6 +22,7 @@ com\yawei\pojo\Notice.class
 com\yawei\service\ShiroRealm.class
 com\yawei\mapper\RoleMapper.class
 com\yawei\util\ShiroUtil.class
+com\yawei\service\DocumentService.class
 com\yawei\pojo\User.class
 com\yawei\controller\AdminController.class
 com\yawei\controller\UserController.class

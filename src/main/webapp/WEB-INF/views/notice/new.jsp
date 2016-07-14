@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/static/dist/css/skins/skin-blue.min.css">
     <link rel="stylesheet" href="/static/plugins/simditor/styles/simditor.css">
 
+
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -47,7 +48,7 @@
                         </div>
                         <div class="form-group">
                             <label>公告内容</label>
-                            <textarea class="form-control" name="context" id="context" rows="15"></textarea>
+                                <textarea class="form-control" name="context" id="context" rows="15"></textarea>
                         </div>
                     </form>
                 </div>
@@ -76,7 +77,15 @@
 <script src="/static/plugins/simditor/scripts/uploader.min.js"></script>
 <script src="/static/plugins/simditor/scripts/simditor.min.js"></script>
 
+
 <script>
+    /*hljs.initHighlightingOnLoad();
+    $(document).ready(function() {
+        $('div textarea').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+    });*/
+
     $(function(){
         var editor = new Simditor({
             textarea: $("#context"),

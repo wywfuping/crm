@@ -6,6 +6,7 @@ import com.yawei.util.ShiroUtil;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -47,6 +48,7 @@ public class DocumentService {
      * @param size 文件的大小
      * @param fid 父级Id
      */
+    @Transactional
     public void saveFile(InputStream inputStream, String originalFilename, String contentType, long size, Integer fid) {
         String suffix="";
         if(originalFilename.lastIndexOf(".")!=-1){

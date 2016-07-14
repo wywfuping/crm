@@ -6,7 +6,7 @@
 
     <insert id="save">
         insert into t_document (name, size, createuser, type, filename, md5, fid,contexttype)
-        values (#{name},#{size},#{createuser},#{type},#{filename},#{md5},#{fid},#{contexttype});
+        values (#{name},#{size},#{createuser},#{type},#{filename},#{md5},#{fid},#{contexttype})
     </insert>
     <delete id="delete">
         DELETE FROM t_document WHERE id=#{id}

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/static/dist/css/AdminLTE.min.css">
 
     <link rel="stylesheet" href="/static/dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="/static/plugins/highlight/default.css">
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -56,7 +57,9 @@
                 </div>
 
                 <div class="box-body">
-                    ${notice.context}
+                    <pre><code class="java">
+                        ${notice.context}
+                    </code></pre>
                 </div>
                 <div class="box-footer">
 
@@ -75,6 +78,8 @@
 <script src="/static/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/static/dist/js/app.min.js"></script>
+<script src="/static/plugins/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
 

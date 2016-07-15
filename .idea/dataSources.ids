@@ -234,7 +234,6 @@
         <data-type>varchar(45)</data-type>
       </column>
       <column id="60" parent="7" name="userid">
-        <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
       <column id="61" parent="7" name="type">

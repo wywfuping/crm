@@ -200,7 +200,7 @@ public class CustomerController {
      * @param userid
      * @return
      */
-    @RequestMapping(value = "/move", method = RequestMethod.GET)
+    @RequestMapping(value = "/move", method = RequestMethod.POST)
     public String moveCustomer(Integer id, Integer userid) {
         Customer customer = customerService.findCustomerById(id);
         if (customer == null) {
@@ -211,7 +211,7 @@ public class CustomerController {
             throw new ForbiddenException();
         }
         customerService.moveCustomer(customer, userid);
-        return "redirect:/customer/";
+        return "redirect:/customer";
     }
 
     /**
@@ -221,8 +221,8 @@ public class CustomerController {
      * @param response
      * @return
      */
-    @RequestMapping(value = "/qcord/{id:\\d+}.png", method = RequestMethod.GET)
-    public String toCard(@PathVariable Integer id, HttpServletResponse response) throws WriterException, IOException {
+    @RequestMapping(value = "/qrcode/{id:\\d+}.png", method = RequestMethod.GET)
+    public void toCard(@PathVariable Integer id, HttpServletResponse response) throws WriterException, IOException {
         String toCard = customerService.toCard(id);
         Map<EncodeHintType, String> encode = Maps.newHashMap();
         encode.put(EncodeHintType.CHARACTER_SET, "UTF-8");

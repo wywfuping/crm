@@ -18,6 +18,7 @@ D:\myidea\project\crm\src\main\java\com\yawei\service\ShiroRealm.java
 D:\myidea\project\crm\src\main\java\com\yawei\pojo\Notice.java
 D:\myidea\project\crm\src\main\java\com\yawei\pojo\UserLog.java
 D:\myidea\project\crm\src\main\java\com\yawei\service\CustomerService.java
+D:\myidea\project\crm\src\main\java\com\yawei\exception\ForbiddenException.java
 D:\myidea\project\crm\src\main\java\com\yawei\mapper\UserLogMapper.java
 D:\myidea\project\crm\src\main\java\com\yawei\Test.java
 D:\myidea\project\crm\src\main\java\com\yawei\controller\AdminController.java

@@ -22,6 +22,7 @@ com\yawei\util\ServletUtil.class
 com\yawei\util\Page.class
 com\yawei\pojo\Role.class
 com\yawei\pojo\Customer.class
+com\yawei\exception\ForbiddenException.class
 com\yawei\pojo\Notice.class
 com\yawei\service\ShiroRealm.class
 com\yawei\mapper\RoleMapper.class

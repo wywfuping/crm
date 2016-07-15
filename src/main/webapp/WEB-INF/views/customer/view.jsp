@@ -88,7 +88,7 @@
                             <tr>
                                 <td>关联客户</td>
                                 <td colspan="5"> <c:forEach items="${customerList}" var="customer">
-                                    <a href="/customer/{customer.id}">${customer.name}</a>
+                                    <a href="/customer/${customer.id}">${customer.name}</a>
                                 </c:forEach></td>
                             </tr>
                         </c:if>
@@ -112,14 +112,19 @@
                     <div class="box box-default">
                         <div class="box-header with-border">
                             <h3 class="box-title"><i class="fa fa-qrcode"></i>电子名片</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                </button>
+                            </div>
                         </div>
+
                         <div class="box-body" style="text-align: center">
-                            <img src="/customer/qrcode/{customer.id}.png" alt="">
+                            <img src="/customer/qrcode/${customer.id}.png" alt="">
                         </div>
                     </div>
                 </div>
                 <%--待办事项--%>
-                <div class="col-md-4">
+                <div class="col-md-4 pull-right">
                     <div class="box box-default">
                         <div class="box-header with-border">
                             <h3 class="box-title"><i class="fa fa-calendar-check-o"></i>待办事项</h3>

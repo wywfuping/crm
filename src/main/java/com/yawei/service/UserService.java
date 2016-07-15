@@ -159,4 +159,12 @@ public class UserService {
     public void editUser(User user) {
         userMapper.updateUser(user);
     }
+
+    /**
+     * 查找所有用户
+     * @return
+     */
+    public List<User> findAllUser() {
+        return userMapper.findAll();
+    }
 }

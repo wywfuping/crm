@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -54,7 +55,7 @@
                     <table class="table" id="customerTable">
                         <thead>
                         <tr>
-                            <th>客户类型</th>
+                            <th></th>
                             <th>客户名称</th>
                             <th>电话</th>
                             <th>电子邮箱</th>
@@ -84,7 +85,7 @@
             <div class="modal-body">
                 <form id="newForm">
                     <div class="form-group">
-                        <label>客户类型</label>
+                        <label></label>
                         <div>
                             <label class="radio-inline">
                                 <input type="radio" name="type" value="person" id="radioPerson" checked>个人
@@ -126,7 +127,7 @@
                             <option value="★★★★★">★★★★★</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="companyList">
                         <label>所属公司</label>
                         <select class="form-control" name="companyid">
                             <option value=""></option>
@@ -140,6 +141,66 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
                 <button type="button" class="btn btn-primary" id="saveBtn">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%--修改客户弹出框--%>
+<div class="modal fade" id="editModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">修改客户</h4>
+            </div>
+            <div class="modal-body">
+                <form id="editForm">
+                    <input type="hidden" id="edit_userid" name="userid">
+                    <input type="hidden" id="edit_id" name="id">
+                    <input type="hidden" id="edit_type" name="type">
+                    <div class="form-group">
+                        <label>客户名称</label>
+                        <input type="text" name="name" id="edit_name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>电话</label>
+                        <input type="text" name="tel" id="edit_tel" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>微信</label>
+                        <input type="text" name="weixin" id="edit_weixin" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>地址</label>
+                        <input type="text" name="address" id="edit_address" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>电子邮箱</label>
+                        <input type="text" name="email" id="edit_email" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>客户等级</label>
+                        <select class="form-control" id="edit_level" name="level">
+                            <option value=""></option>
+                            <option value="★">★</option>
+                            <option value="★★">★★</option>
+                            <option value="★★★">★★★</option>
+                            <option value="★★★★">★★★★</option>
+                            <option value="★★★★★">★★★★★</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="editCompanyList">
+                        <label>所属公司</label>
+                        <select class="form-control" name="companyid"></select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="editBtn">修改</button>
             </div>
         </div>
     </div>
@@ -161,12 +222,12 @@
             serverSide: true,
             ordering: false,
             "autoWidth": false,
-            ajax: "/customer/list/load",
+            ajax: "/customer/load",
             columns: [
                 {
                     "data": function (row) {
                         if (row.type == "company") {
-                            return "<i class='fa fa-compass'></i>";
+                            return "<i class='fa fa-bank'></i>";
                         }
                         return "<i class='fa fa-user'></i>";
                     }
@@ -174,19 +235,28 @@
                 {
                     "data": function (row) {
                         if (row.company) {
-                            return row.name + "-" + row.company;
+                            return "<a href='/customer/"+row.id+"'>"+row.name+"</a>" + "-" +
+                                    "<a href='/customer/"+row.companyid+"'>"+row.company+"</a>";
                         }
-                        return row.name;
+                        return "<a href='/customer/"+row.id+"'>"+row.name+"</a>";
                     }
                 },
                 {"data": "tel"},
                 {"data": "email"},
-                {"data": "level"},
+                {"data": function (row) {
+                    return "<span style='color: #ff7400'>"+row.level+"</span>";
+                }},
                 {
                     "data": function (row) {
                         var timestamp = row.createtime;
                         var day = moment(timestamp).format("YYYY-MM-DD HH:mm");
                         return day;
+                    }
+                },
+                {
+                    "data": function (row) {
+                        return "<a href='#' class='editLink' rel='" + row.id + "'>修改</a>" <shiro:hasRole name="经理"> +
+                                " <a href='#' class='delLink' rel='" + row.id + "'>删除</a>"</shiro:hasRole>;
                     }
                 }
             ],
@@ -209,46 +279,179 @@
 
         //新增客户信息
         $("#newForm").validate({
-            errorClass:"text-danger",
-            errorElement:"span",
-            rules:{
-                name:{
-                    required:true
+            errorClass: "text-danger",
+            errorElement: "span",
+            rules: {
+                name: {
+                    required: true
                 },
-                tel:{
-                    required:true
+                tel: {
+                    required: true
                 }
             },
-            messages:{
-                name:{
-                    required:"请输入客户名称"
+            messages: {
+                name: {
+                    required: "请输入客户名称"
                 },
-                tel:{
-                    required:"请输入电话"
+                tel: {
+                    required: "请输入电话"
                 }
             },
-            submitHandler:function(form){
-                $.post("/customer/list/new",$(form).serialize()).done(function(data){
-                    if(data=="success"){
+            submitHandler: function (form) {
+                $.post("/customer/new", $(form).serialize()).done(function (data) {
+                    if (data == "success") {
                         $("#newModal").modal("hide");
                         dataTable.ajax.reload();
+                        //alert("客户新增成功");
                     }
                 }).fail(function () {
                     alert("服务器异常")
                 });
             }
         });
-        $("#newBtn").click(function(){
+        $("#newBtn").click(function () {
             $("#newForm")[0].reset();
+            $.get("/customer/company.json", "click", function (data) {
+                var $select = $("#companyList select");
+                $select.html("");
+                $select.append('<option></option>');
+                if (data && data.length) {
+                    for (var i = 0; i < data.length; i++) {
+                        var company = data[i];
+                        var option = "<option value='" + company.id + "'>" + company.name + "</option>";
+                        $select.append(option);
+                    }
+                }
+            }).fail(function () {
+                alert("服务器运行异常");
+            });
+
+            $("#companyList").show();
+
             $("#newModal").modal({
-                show:true,
-                backdrop:'static',
-                keyboard:false
+                show: true,
+                backdrop: 'static',
+                keyboard: false
             });
         });
 
-        $("#saveBtn").click(function(){
+        $("#radioCompany").click(function () {
+            if ($(this)[0].checked) {
+                $("#companyList").hide();
+            }
+        });
+        $("#radioPerson").click(function () {
+            if ($(this)[0].checked) {
+                $("#companyList").show();
+            }
+        });
+        $("#saveBtn").click(function () {
             $("#newForm").submit();
+        });
+
+        //删除客户
+        <shiro:hasRole name="经理">
+        $(document).delegate(".delLink", "click", function () {
+            if (confirm("确定要删除客户及关联的数据吗？")) {
+                var id = $(this).attr("rel");
+                $.get("/customer/del/" + id).done(function (data) {
+                    if ("success" == data) {
+                        dataTable.ajax.reload();
+                    }
+                }).fail(function () {
+                    alert("服务器异常");
+                });
+            }
+        });
+        </shiro:hasRole>
+
+        //修改客户信息
+
+        $("#editForm").validate({
+            errorClass: "text-danger",
+            errorElement: "span",
+            rules: {
+                name: {
+                    required: true
+                },
+                tel: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "请输入客户名称"
+                },
+                tel: {
+                    required: "请输入电话"
+                }
+            },
+            submitHandler: function (form) {
+                $.post("/customer/edit", $(form).serialize()).done(function (data) {
+                    if (data == "success") {
+                        $("#editModal").modal("hide");
+                        dataTable.ajax.reload();
+                        //alert("客户修改成功");
+                    }
+                }).fail(function () {
+                    alert("服务器异常");
+                });
+            }
+        });
+
+        $(document).delegate(".editLink","click",function(){
+            var id = $(this).attr("rel");
+            var $select = $("#editCompanyList select");
+            $select.html("");
+            $select.append("<option></option>");
+
+            $.get("/customer/edit/"+id+".json").done(function(data){
+
+                if(data.state == "success") {
+
+                    if(data.companyList && data.companyList.length) {
+                        for(var i = 0;i < data.companyList.length;i++) {
+                            var company = data.companyList[i];
+                            var option = "<option value='"+company.id+"'>"+company.name+"</option>";
+                            $select.append(option);
+                        }
+                    }
+
+                    var customer = data.customer;
+
+                    if(customer.type == 'company') {
+                        $("#editCompanyList").hide();
+                    } else {
+                        $("#editCompanyList").show();
+                    }
+
+                    $("#edit_id").val(customer.id);
+                    $("#edit_name").val(customer.name);
+                    $("#edit_tel").val(customer.tel);
+                    $("#edit_weixin").val(customer.weixin);
+                    $("#edit_address").val(customer.address);
+                    $("#edit_email").val(customer.email);
+                    $("#edit_level").val(customer.level);
+                    $("#edit_userid").val(customer.userid);
+                    $("#edit_type").val(customer.type);
+                    $select.val(customer.companyid);
+
+
+                    $("#editModal").modal({
+                        show: true,
+                        backdrop: 'static',
+                        keyboard: false
+                    });
+                } else {
+                    alert(data.message);
+                }
+            }).fail(function(){
+                alert("服务器异常");
+            });
+        });
+
+        $("#editBtn").click(function () {
+            $("#editForm").submit();
         });
 
     });

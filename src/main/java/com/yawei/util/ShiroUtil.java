@@ -13,5 +13,13 @@ public class ShiroUtil {
         return getCurrentUser().getUsername();
     }
 
-
+    public static boolean isAdmin(){
+        return getCurrentUser().getRole().getRolename().equals("管理员");
+    }
+    public static boolean isManager(){
+        return getCurrentUser().getRole().getRolename().equals("经理");
+    }
+    public static boolean isEmployee(){
+        return getCurrentUser().getRole().getRolename().equals("员工");
+    }
 }

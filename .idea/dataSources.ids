@@ -52,10 +52,12 @@
         <data-type>int(11)</data-type>
       </column>
       <column id="17" parent="3" name="enable">
+        <comment>是否可用</comment>
         <data-type>tinyint(1)</data-type>
         <default-expression>&apos;1&apos;</default-expression>
       </column>
       <column id="18" parent="3" name="realname">
+        <comment>真是名字</comment>
         <data-type>varchar(45)</data-type>
       </column>
       <index id="19" parent="3" name="fk_t_user_t_role_idx">
@@ -179,7 +181,7 @@
         <data-type>int(11)</data-type>
       </column>
       <column id="47" parent="6" name="contexttype">
-        <comment>文件类型</comment>
+        <comment>文件类型（dir或doc）</comment>
         <data-type>varchar(45)</data-type>
       </column>
       <key id="48" parent="6" name="PRIMARY">
@@ -236,7 +238,7 @@
         <data-type>int(11)</data-type>
       </column>
       <column id="61" parent="7" name="type">
-        <comment>客户类型（个人或公司）</comment>
+        <comment>客户类型（人或公司）</comment>
         <data-type>varchar(45)</data-type>
       </column>
       <index id="62" parent="7" name="fk_t_customer_t_user1_idx">

@@ -23,4 +23,12 @@ public class Role implements Serializable{
     public void setRolename(String rolename) {
         this.rolename = rolename;
     }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", rolename='" + rolename + '\'' +
+                '}';
+    }
 }

@@ -7,14 +7,57 @@
         insert into t_customer (name, tel, weixin, address, email, pinyin,companyid, company, level, userid,type)
         values (#{name},#{tel},#{weixin},#{address},#{email},#{pinyin},#{companyid},#{company},#{level},#{userid},#{type})
     </insert>
+    <update id="update">
+        update t_customer SET name=#{name},tel=#{tel},weixin=#{weixin},address=#{address},email=#{email},
+        pinyin=#{pinyin},companyid=#{companyid},company=#{company},level=#{level},userid=#{userid},type=#{type}
+        where id=#{id}
+    </update>
+    <delete id="del">
+        delete FROM t_customer WHERE id=#{id}
+    </delete>
     <select id="findById" resultType="Customer">
         select * from t_customer WHERE id=#{id}
     </select>
     <select id="findByCompanyid" resultType="Customer">
-        select * from t_customer WHERE id=#{companyid};
+        select * from t_customer WHERE id=#{companyid}
+    </select>
+    <select id="findByparam" resultType="Customer">
+        select * from t_customer
+        <where>
+            <if test="userid != null and userid != ''">
+                userid=#{userid} or (userid='' or userid is null)
+            </if>
+            <if test="keyword != null and keyword != ''">
+                and (name like concat('%',#{keyword},'%') or pinyin like concat('%',#{keyword},'%')
+                or tel like concat('%',#{keyword},'%'))
+            </if>
+        </where>
+        order by id desc
+        limit ${start},${length}
     </select>
     <select id="findAll" resultType="Customer">
         select * from t_customer
+    </select>
+    <select id="count" resultType="Long">
+        select count(*) from t_customer
+    </select>
+    <select id="findCountByParam" resultType="Long">
+        select count(*) from t_customer
+        <where>
+            <if test="userid != null and userid != ''">
+                userid=#{userid} or (userid='' or userid is null)
+            </if>
+            <if test="keyword != null and keyword != ''">
+                and (name like concat('%',#{keyword},'%') or pinyin like concat('%',#{keyword},'%')
+                or tel like concat('%',#{keyword},'%'))
+            </if>
+        </where>
+    </select>
+    <select id="findByType" resultType="Customer">
+        select * from t_customer WHERE type=#{type}
+    </select>
+    <select id="findCustomerByCompanyid" resultType="Customer">
+        select * from t_customer where companyid=#{id}
     </select>
 
 </mapper>

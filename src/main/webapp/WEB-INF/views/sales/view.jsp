@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CRM客户管理|${customer.name}</title>
+    <title>CRM销售机会|${sales.name}</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -26,20 +26,19 @@
     <%@include file="../include/mainHeader.jsp" %>
     <!-- Left side column. contains the logo and sidebar -->
     <jsp:include page="../include/leftSide.jsp">
-        <jsp:param name="menu" value="customer"/>
+        <jsp:param name="menu" value="sales"/>
     </jsp:include>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
         <section class="content-header">
             <h1>
-                客户管理
-                <small>${customer.name}</small>
+                销售机会
+                <small>${sales.name}</small>
             </h1>
             <ol class="breadcrumb">
                 <li><a href="/sales"><i class="fa fa-dashboard"></i> 销售机会列表</a></li>
-                <li><a href="/customer"><i class="fa fa-dashboard"></i> 客户列表</a></li>
-                <li class="active">${customer.name}</li>
+                <li class="active">${sales.name}</li>
             </ol>
         </section>
         <section class="content">

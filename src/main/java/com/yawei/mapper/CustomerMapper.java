@@ -20,4 +20,5 @@ public interface CustomerMapper {
     void del(Integer id);
 
     List<Customer> findCustomerByCompanyid(Integer id);
+
 }

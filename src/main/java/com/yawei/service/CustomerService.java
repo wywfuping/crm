@@ -183,4 +183,12 @@ public class CustomerService {
 
         return mecard.toString();
     }
+
+    /**
+     * 查找所有客户信息
+     * @return
+     */
+    public List<Customer> findAllCustomerBy() {
+        return customerMapper.findAll();
+    }
 }

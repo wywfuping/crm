@@ -20,6 +20,6 @@ public interface SalesMapper {
 
     Long findCountByParam(Map<String, Object> params);
 
-    List<Sales> findAllUser();
 
+    void del(Integer id);
 }

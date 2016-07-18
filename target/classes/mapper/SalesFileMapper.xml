@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yawei.mapper.SalesFileMapper">
+    <cache/>
+    <insert id="save">
+        insert into t_sales_file (name, filename, contenttype, createtime, size, salesid)
+        values (name=#{name},filename=#{filename},contenttype=#{contenttype},size=#{size},salesid=#{salesid});
+    </insert>
+    <delete id="del">
+        DELETE  FROM t_sales_file WHERE id in(
+        <foreach collection="list" separator="," item="file">
+            #{file.id}
+        </foreach>
+        )
+    </delete>
+    <select id="findBySalesid" resultType="SalesFile">
+        select * from t_sales_file WHERE salesid=#{id}
+    </select>
+    <select id="findById" resultType="com.yawei.pojo.SalesFile">
+        select * from t_sales_file WHERE id=#{id}
+    </select>
+    <select id="findBySalesId" resultType="com.yawei.pojo.SalesFile">
+        select * from t_sales_file WHERE salesid=#{id} order by id desc
+    </select>
+</mapper>

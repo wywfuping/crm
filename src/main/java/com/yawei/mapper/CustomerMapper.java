@@ -21,4 +21,5 @@ public interface CustomerMapper {
 
     List<Customer> findCustomerByCompanyid(Integer id);
 
+    List<Customer> findAll(Integer userid);
 }

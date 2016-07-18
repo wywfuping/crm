@@ -2,8 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.yawei.mapper.SalesMapper">
+    <cache/>
 
-    <insert id="save">
+    <insert id="save" useGeneratedKeys="true" keyProperty="id">
         insert into t_sales (name, price, progress, lasttime, successtime, custid, userid, custname, username)
         values (#{name}, #{price}, #{progress}, #{lasttime}, #{successtime}, #{custid}, #{userid}, #{custname}, #{username});
     </insert>
@@ -11,16 +12,19 @@
     <delete id="delete">
         delete FROM t_sales where id=#{id}
     </delete>
+    <delete id="del">
+        DELETE FROM t_sales WHERE id = #{id}
+    </delete>
 
     <update id="update">
-        update t_sales set name#{name}, price=#{price}, progress=#{progress}, lasttime=#{lasttime}, successtime#{successtime}, custid=#{custid}, userid=#{userid}, custname=#{custname}, username=#{username}
+        update t_sales set progress=#{progress}, lasttime=#{lasttime}, successtime=#{successtime}
         where id=#{id}
     </update>
     <select id="findById" resultType="Sales">
         select * from t_sales WHERE id=#{id}
     </select>
     <select id="findByCustid" resultType="Sales">
-        select * from t_sales WHERE custid=#{id}
+        select * from t_sales WHERE custid=#{id} order by id desc
     </select>
     <select id="findByUserid" resultType="Sales">
         select * from t_sales WHERE userid=#{id}
@@ -29,15 +33,25 @@
         select * from t_sales
         <where>
             <if test="userid != null and userid != ''">
-                userid=#{userid} or (userid='' or userid is null)
+                userid=#{userid}
             </if>
-            <if test="keyword != null and keyword != ''">
-                and (name like concat('%',#{keyword},'%') or username like concat('%',#{keyword},'%'))
+            <if test="name != null and name != ''">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="progress != null and progress != ''">
+                and progress=#{progress}
+            </if>
+            <if test="startdate != null and startdate != ''">
+                and date(lasttime)>=#{startdate}
+            </if>
+            <if test="enddate != null and enddate != ''">
+                and date(lasttime) &lt;=#{enddate}
             </if>
         </where>
         order by id desc
         limit ${start},${length}
     </select>
+
     <select id="findAll" resultType="Sales">
         select * from t_sales
     </select>
@@ -45,26 +59,25 @@
         select count(*) from t_sales
     </select>
     <select id="findCountByParam" resultType="long">
-        select count(*) from t_sales
+        SELECT count(*) FROM t_sales
         <where>
             <if test="userid != null and userid != ''">
-                userid=#{userid} or (userid='' or userid is null)
+                userid = #{userid}
             </if>
-            <if test="keyword != null and keyword != ''">
-                and (name like concat('%',#{keyword},'%') or username like concat('%',#{keyword},'%'))
+            <if test="name != null and name != ''">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="progress != null and progress != ''">
+                and progress = #{progress }
+            </if>
+            <if test="startdate != null and startdate != ''">
+                and date(lasttime) >= #{startdate}
+            </if>
+            <if test="enddate != null and enddate != ''">
+                and date(lasttime) &lt;= #{enddate}
             </if>
         </where>
     </select>
 
-    <select id="findAllUser" resultType="Sales">
-        select t_sales.*,t_user.id as 'user.id',t_user.username as 'user.username' from t_sales
-        INNER JOIN t_user ON t_sales.userid = t_user.id
-        <where>
-            <if test="userid != null and userid != ''">
-                userid=#{userid} or (userid='' or userid is null)
-            </if>
-        </where>
-        order by t_sales.id desc
-    </select>
 
 </mapper>

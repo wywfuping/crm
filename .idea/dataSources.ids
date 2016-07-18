@@ -17,392 +17,470 @@
       <table id="8" parent="1" name="t_sales"/>
       <table id="9" parent="1" name="t_sales_file"/>
       <table id="10" parent="1" name="t_sales_log"/>
-      <column id="11" parent="2" name="id">
+      <table id="11" parent="1" name="t_task"/>
+      <column id="12" parent="2" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="12" parent="2" name="rolename">
+      <column id="13" parent="2" name="rolename">
         <comment>角色</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <key id="13" parent="2" name="PRIMARY">
+      <key id="14" parent="2" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="14" parent="3" name="id">
+      <column id="15" parent="3" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="15" parent="3" name="username">
+      <column id="16" parent="3" name="username">
         <comment>账号</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="16" parent="3" name="password">
+      <column id="17" parent="3" name="password">
         <comment>密码（加密）</comment>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="17" parent="3" name="weixin">
+      <column id="18" parent="3" name="weixin">
         <comment>微信ID</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="18" parent="3" name="createtime">
+      <column id="19" parent="3" name="createtime">
         <comment>创建时间</comment>
         <data-type>timestamp</data-type>
         <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
       </column>
-      <column id="19" parent="3" name="roleid">
+      <column id="20" parent="3" name="roleid">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="20" parent="3" name="enable">
+      <column id="21" parent="3" name="enable">
         <comment>是否可用</comment>
         <data-type>tinyint(1)</data-type>
         <default-expression>&apos;1&apos;</default-expression>
       </column>
-      <column id="21" parent="3" name="realname">
+      <column id="22" parent="3" name="realname">
         <comment>真是名字</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <index id="22" parent="3" name="fk_t_user_t_role_idx">
+      <index id="23" parent="3" name="fk_t_user_t_role_idx">
         <columns>roleid</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="23" parent="3" name="PRIMARY">
+      <key id="24" parent="3" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="24" parent="3" name="fk_t_user_t_role">
+      <foreign-key id="25" parent="3" name="fk_t_user_t_role">
         <columns>roleid</columns>
         <ref-key>~.t_role.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="25" parent="4" name="id">
+      <column id="26" parent="4" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="26" parent="4" name="logintime">
+      <column id="27" parent="4" name="logintime">
         <comment>登录时间</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="27" parent="4" name="loginip">
+      <column id="28" parent="4" name="loginip">
         <comment>登录IP</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="28" parent="4" name="userid">
+      <column id="29" parent="4" name="userid">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <index id="29" parent="4" name="fk_t_userlog_t_user1_idx">
+      <index id="30" parent="4" name="fk_t_userlog_t_user1_idx">
         <columns>userid</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="30" parent="4" name="PRIMARY">
+      <key id="31" parent="4" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="31" parent="4" name="fk_t_userlog_t_user1">
+      <foreign-key id="32" parent="4" name="fk_t_userlog_t_user1">
         <columns>userid</columns>
         <ref-key>~.t_user.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="32" parent="5" name="id">
+      <column id="33" parent="5" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="33" parent="5" name="title">
+      <column id="34" parent="5" name="title">
         <comment>公告标题</comment>
         <data-type>varchar(150)</data-type>
       </column>
-      <column id="34" parent="5" name="context">
+      <column id="35" parent="5" name="context">
         <comment>公告内容</comment>
         <data-type>longtext</data-type>
       </column>
-      <column id="35" parent="5" name="createtime">
+      <column id="36" parent="5" name="createtime">
         <comment>创建时间</comment>
         <data-type>timestamp</data-type>
         <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
       </column>
-      <column id="36" parent="5" name="realname">
+      <column id="37" parent="5" name="realname">
         <comment>真实姓名</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="37" parent="5" name="userid">
+      <column id="38" parent="5" name="userid">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <index id="38" parent="5" name="fk_t_notice_t_user1_idx">
+      <index id="39" parent="5" name="fk_t_notice_t_user1_idx">
         <columns>userid</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="39" parent="5" name="PRIMARY">
+      <key id="40" parent="5" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="40" parent="5" name="fk_t_notice_t_user1">
+      <foreign-key id="41" parent="5" name="fk_t_notice_t_user1">
         <columns>userid</columns>
         <ref-key>~.t_user.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="41" parent="6" name="id">
+      <column id="42" parent="6" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="42" parent="6" name="name">
+      <column id="43" parent="6" name="name">
         <comment>文件或文件夹的原始名字</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="43" parent="6" name="size">
+      <column id="44" parent="6" name="size">
         <comment>文件大小</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="44" parent="6" name="createtime">
+      <column id="45" parent="6" name="createtime">
         <comment>创建时间</comment>
         <data-type>timestamp</data-type>
         <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
       </column>
-      <column id="45" parent="6" name="createuser">
+      <column id="46" parent="6" name="createuser">
         <comment>创建人</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="46" parent="6" name="type">
+      <column id="47" parent="6" name="type">
         <comment>文件类型（区分dir或doc）</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="47" parent="6" name="filename">
+      <column id="48" parent="6" name="filename">
         <comment>文件存入磁盘中的名字</comment>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="48" parent="6" name="md5">
+      <column id="49" parent="6" name="md5">
         <comment>文件的md5值</comment>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="49" parent="6" name="fid">
+      <column id="50" parent="6" name="fid">
         <comment>文件或文件夹的父级ID，顶级为0</comment>
         <data-type>int(11)</data-type>
       </column>
-      <column id="50" parent="6" name="contexttype">
+      <column id="51" parent="6" name="contexttype">
         <comment>文件类型（dir或doc）</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <key id="51" parent="6" name="PRIMARY">
+      <key id="52" parent="6" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="52" parent="7" name="id">
+      <column id="53" parent="7" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="53" parent="7" name="name">
+      <column id="54" parent="7" name="name">
         <comment>客户名称</comment>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="54" parent="7" name="tel">
+      <column id="55" parent="7" name="tel">
         <comment>联系电话</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="55" parent="7" name="weixin">
+      <column id="56" parent="7" name="weixin">
         <comment>微信号</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="56" parent="7" name="address">
+      <column id="57" parent="7" name="address">
         <comment>客户地址</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="57" parent="7" name="email">
+      <column id="58" parent="7" name="email">
         <comment>电子邮件</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="58" parent="7" name="pinyin">
+      <column id="59" parent="7" name="pinyin">
         <comment>客户名称的汉语拼音</comment>
         <data-type>varchar(200)</data-type>
       </column>
-      <column id="59" parent="7" name="createtime">
+      <column id="60" parent="7" name="createtime">
         <comment>创建时间</comment>
         <data-type>timestamp</data-type>
         <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
       </column>
-      <column id="60" parent="7" name="companyid">
+      <column id="61" parent="7" name="companyid">
         <comment>所属公司ID</comment>
         <data-type>int(11)</data-type>
       </column>
-      <column id="61" parent="7" name="company">
+      <column id="62" parent="7" name="company">
         <comment>公司名称</comment>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="62" parent="7" name="level">
+      <column id="63" parent="7" name="level">
         <comment>客户等级</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="63" parent="7" name="userid">
+      <column id="64" parent="7" name="userid">
         <data-type>int(11)</data-type>
       </column>
-      <column id="64" parent="7" name="type">
+      <column id="65" parent="7" name="type">
         <comment>客户类型（人或公司）</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <index id="65" parent="7" name="fk_t_customer_t_user1_idx">
+      <index id="66" parent="7" name="fk_t_customer_t_user1_idx">
         <columns>userid</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="66" parent="7" name="PRIMARY">
+      <key id="67" parent="7" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="67" parent="7" name="fk_t_customer_t_user1">
+      <foreign-key id="68" parent="7" name="fk_t_customer_t_user1">
         <columns>userid</columns>
         <ref-key>~.t_user.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="68" parent="8" name="id">
+      <column id="69" parent="8" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="69" parent="8" name="name">
+      <column id="70" parent="8" name="name">
         <comment>销售机会名称</comment>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="70" parent="8" name="price">
+      <column id="71" parent="8" name="price">
         <comment>价值</comment>
         <data-type>float</data-type>
       </column>
-      <column id="71" parent="8" name="progress">
+      <column id="72" parent="8" name="progress">
         <comment>当前进度</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="72" parent="8" name="createtime">
+      <column id="73" parent="8" name="createtime">
         <comment>创建时间</comment>
         <data-type>timestamp</data-type>
         <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
       </column>
-      <column id="73" parent="8" name="lasttime">
+      <column id="74" parent="8" name="lasttime">
         <comment>最会跟进时间</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="74" parent="8" name="successtime">
+      <column id="75" parent="8" name="successtime">
         <comment>交易完成时间</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="75" parent="8" name="custid">
+      <column id="76" parent="8" name="custid">
         <comment>关联客户ID</comment>
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="76" parent="8" name="userid">
+      <column id="77" parent="8" name="userid">
         <comment>关联员工ID</comment>
         <data-type>int(11)</data-type>
       </column>
-      <column id="77" parent="8" name="custname">
+      <column id="78" parent="8" name="custname">
         <comment>关联客户名字</comment>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="78" parent="8" name="username">
+      <column id="79" parent="8" name="username">
         <comment>关联员工姓名</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <index id="79" parent="8" name="fk_t_sales_t_customer1_idx">
+      <index id="80" parent="8" name="fk_t_sales_t_customer1_idx">
         <columns>custid</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="80" parent="8" name="fk_t_sales_t_user1_idx">
+      <index id="81" parent="8" name="fk_t_sales_t_user1_idx">
         <columns>userid</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="81" parent="8" name="PRIMARY">
+      <key id="82" parent="8" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="82" parent="8" name="fk_t_sales_t_customer1">
+      <foreign-key id="83" parent="8" name="fk_t_sales_t_customer1">
         <columns>custid</columns>
         <ref-key>~.t_customer.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="83" parent="8" name="fk_t_sales_t_user1">
+      <foreign-key id="84" parent="8" name="fk_t_sales_t_user1">
         <columns>userid</columns>
         <ref-key>~.t_user.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="84" parent="9" name="id">
+      <column id="85" parent="9" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="85" parent="9" name="name">
+      <column id="86" parent="9" name="name">
         <comment>文件名称</comment>
         <data-type>varchar(200)</data-type>
       </column>
-      <column id="86" parent="9" name="filename">
+      <column id="87" parent="9" name="filename">
         <comment>存到磁盘上的文件名字</comment>
         <data-type>varchar(200)</data-type>
       </column>
-      <column id="87" parent="9" name="contenttype">
+      <column id="88" parent="9" name="contenttype">
         <comment>文件的内容类型</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="88" parent="9" name="createtime">
+      <column id="89" parent="9" name="createtime">
         <comment>创建时间</comment>
         <data-type>timestamp</data-type>
         <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
       </column>
-      <column id="89" parent="9" name="size">
+      <column id="90" parent="9" name="size">
         <comment>文件的大小（字节）</comment>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="90" parent="9" name="salesid">
+      <column id="91" parent="9" name="salesid">
         <comment>销售机会ID</comment>
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <index id="91" parent="9" name="fk_t_sales_file_t_sales1_idx">
+      <index id="92" parent="9" name="fk_t_sales_file_t_sales1_idx">
         <columns>salesid</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="92" parent="9" name="PRIMARY">
+      <key id="93" parent="9" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="93" parent="9" name="fk_t_sales_file_t_sales1">
+      <foreign-key id="94" parent="9" name="fk_t_sales_file_t_sales1">
         <columns>salesid</columns>
         <ref-key>~.t_sales.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="94" parent="10" name="id">
+      <column id="95" parent="10" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="95" parent="10" name="context">
+      <column id="96" parent="10" name="context">
         <data-type>longtext</data-type>
       </column>
-      <column id="96" parent="10" name="createtime">
+      <column id="97" parent="10" name="createtime">
         <comment>创建时间</comment>
         <data-type>timestamp</data-type>
         <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
       </column>
-      <column id="97" parent="10" name="type">
+      <column id="98" parent="10" name="type">
         <comment>类型：手动添加或自动添加</comment>
         <data-type>varchar(45)</data-type>
       </column>
-      <column id="98" parent="10" name="salesid">
+      <column id="99" parent="10" name="salesid">
         <comment>销售机会id</comment>
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <index id="99" parent="10" name="fk_t_sales_log_t_sales1_idx">
+      <index id="100" parent="10" name="fk_t_sales_log_t_sales1_idx">
         <columns>salesid</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="100" parent="10" name="PRIMARY">
+      <key id="101" parent="10" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="101" parent="10" name="fk_t_sales_log_t_sales1">
+      <foreign-key id="102" parent="10" name="fk_t_sales_log_t_sales1">
         <columns>salesid</columns>
         <ref-key>~.t_sales.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="103" parent="11" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="104" parent="11" name="title">
+        <comment>待办事项标题</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="105" parent="11" name="start">
+        <comment>开始</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="106" parent="11" name="end">
+        <comment>结束</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="107" parent="11" name="color">
+        <comment>事项背景色</comment>
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="108" parent="11" name="remindertime">
+        <comment>提醒时间</comment>
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="109" parent="11" name="done">
+        <comment>已完成的事项</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="110" parent="11" name="custid">
+        <comment>关联客户ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="111" parent="11" name="salesid">
+        <comment>关联销售ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="112" parent="11" name="userid">
+        <comment>关联用户ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="113" parent="11" name="fk_t_task_t_customer1_idx">
+        <columns>custid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="114" parent="11" name="fk_t_task_t_sales1_idx">
+        <columns>salesid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="115" parent="11" name="fk_t_task_t_user1_idx">
+        <columns>userid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="116" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="117" parent="11" name="fk_t_task_t_customer1">
+        <columns>custid</columns>
+        <ref-key>~.t_customer.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="118" parent="11" name="fk_t_task_t_sales1">
+        <columns>salesid</columns>
+        <ref-key>~.t_sales.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="119" parent="11" name="fk_t_task_t_user1">
+        <columns>userid</columns>
+        <ref-key>~.t_user.PRIMARY</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>

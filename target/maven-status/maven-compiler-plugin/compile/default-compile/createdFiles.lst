@@ -1,6 +1,8 @@
 com\yawei\pojo\Document.class
+com\yawei\pojo\Task.class
 com\yawei\mapper\SalesMapper.class
 com\yawei\mapper\UserLogMapper.class
+com\yawei\mapper\SalesFileMapper.class
 com\yawei\pojo\UserLog.class
 com\yawei\service\CustomerService.class
 com\yawei\controller\NoticeController.class
@@ -10,14 +12,17 @@ com\yawei\mapper\NoticeMapper.class
 com\yawei\Test.class
 com\yawei\controller\SalesController.class
 com\yawei\util\Strings.class
+com\yawei\mapper\TaskMapper.class
 com\yawei\util\ServletUtil.class
 com\yawei\util\Page.class
 com\yawei\pojo\Role.class
 com\yawei\exception\ForbiddenException.class
 com\yawei\pojo\Sales.class
 com\yawei\service\ShiroRealm.class
+com\yawei\util\TimeAgo.class
 com\yawei\mapper\RoleMapper.class
 com\yawei\pojo\SalesLog.class
+com\yawei\mapper\SalesLogMapper.class
 com\yawei\pojo\SalesFile.class
 com\yawei\service\SalesService.class
 com\yawei\exception\NotFindException.class
@@ -26,6 +31,7 @@ com\yawei\mapper\CustomerMapper.class
 com\yawei\mapper\UserMapper.class
 com\yawei\dto\JSONResult.class
 com\yawei\mapper\DocumentMapper.class
+com\yawei\service\TaskService.class
 com\yawei\controller\DocumentController.class
 com\yawei\controller\CustomerController.class
 com\yawei\controller\HomeController.class
@@ -37,4 +43,5 @@ com\yawei\controller\AdminController.class
 com\yawei\pojo\User.class
 com\yawei\service\DocumentService.class
 com\yawei\controller\UserController.class
+com\yawei\controller\TaskController.class
 com\yawei\service\UserService.class

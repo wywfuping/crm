@@ -37,8 +37,8 @@
                 <small>${customer.name}</small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="/sales"><i class="fa fa-dashboard"></i> 销售机会列表</a></li>
-                <li><a href="/customer"><i class="fa fa-dashboard"></i> 客户列表</a></li>
+                <li><a href="/sales"><i class="fa fa-list"></i> 销售机会列表</a></li>
+                <li><a href="/customer"><i class="fa fa-list"></i> 客户列表</a></li>
                 <li class="active">${customer.name}</li>
             </ol>
         </section>
@@ -66,28 +66,28 @@
                 <div class="box-body">
                     <table class="table">
                         <tr>
-                            <td style="width: 100px">联系电话</td>
+                            <td style="width: 100px">联系电话：</td>
                             <td style="width: 200px">${customer.tel}</td>
-                            <td style="width: 100px">微信</td>
+                            <td style="width: 100px">微信：</td>
                             <td style="width: 200px">${customer.weixin}</td>
-                            <td style="width: 100px">电子邮箱</td>
+                            <td style="width: 100px">电子邮箱：</td>
                             <td>${customer.email}</td>
                         </tr>
                         <tr>
-                            <td>等级</td>
+                            <td>等级：</td>
                             <td style="color: #ff7400">${customer.level}</td>
-                            <td>地址</td>
+                            <td>地址：</td>
                             <td colspan="3">${customer.address}</td>
                         </tr>
                         <c:if test="${not empty customer.companyid}">
                             <tr>
-                                <td>所属公司</td>
+                                <td>所属公司：</td>
                                 <td colspan="5">${customer.company}</td>
                             </tr>
                         </c:if>
                         <c:if test="${not empty customerList}">
                             <tr>
-                                <td>关联客户</td>
+                                <td>关联客户：</td>
                                 <td colspan="5"> <c:forEach items="${customerList}" var="customer">
                                     <a href="/customer/${customer.id}">${customer.name}</a>
                                 </c:forEach></td>
@@ -101,7 +101,7 @@
                 <div class="col-md-8">
                     <div class="box box-info">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><i class="fa fa-list"></i>销售机会</h3>
+                            <h3 class="box-title"><i class="fa fa-list"></i> 销售机会</h3>
                         </div>
                         <div class="box-body">
                             <h5>暂无记录</h5>
@@ -110,11 +110,11 @@
                 </div>
                 <%--电子名片--%>
                 <div class="col-md-4">
-                    <div class="box box-default">
+                    <div class="box box-default collapsed-box">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><i class="fa fa-qrcode"></i>电子名片</h3>
+                            <h3 class="box-title"><i class="fa fa-qrcode"></i> 电子名片</h3>
                             <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                                <button type="button" class="btn btn-box-tool"  data-widget="collapse"><i class="fa fa-plus"></i>
                                 </button>
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                 <div class="col-md-4 pull-right">
                     <div class="box box-default">
                         <div class="box-header with-border">
-                            <h3 class="box-title"><i class="fa fa-calendar-check-o"></i>待办事项</h3>
+                            <h3 class="box-title"><i class="fa fa-calendar-check-o"></i> 待办事项</h3>
                         </div>
                         <div class="box-body">
                             <h5>暂无待办事项</h5>

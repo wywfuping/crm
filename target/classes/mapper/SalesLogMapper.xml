@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yawei.mapper.SalesLogMapper">
+    <cache/>
+    <insert id="save">
+        insert into t_sales_log (context, type, salesid)
+        values (#{context},#{type},#{salesid})
+    </insert>
+    <delete id="del">
+        DELETE FROM t_sales_log WHERE id IN (
+        <foreach collection="list" item="log" separator=",">
+            #{log.id}
+        </foreach>
+        )
+    </delete>
+
+    <select id="findBySalesid" resultType="SalesLog">
+        select * from t_sales_log WHERE salesid=#{id}
+    </select>
+    <select id="findBySalesId" resultType="com.yawei.pojo.SalesLog">
+        select * from t_sales_log WHERE salesid=#{id} order by id desc
+    </select>
+</mapper>

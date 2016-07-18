@@ -37,6 +37,12 @@
     </select>
     <select id="findAll" resultType="Customer">
         select * from t_customer
+        <where>
+            <if test="userid != null and userid != ''">
+                userid = #{userid}
+            </if>
+        </where>
+        ORDER BY id DESC
     </select>
     <select id="count" resultType="Long">
         select count(*) from t_customer

@@ -188,7 +188,12 @@ public class CustomerService {
      * 查找所有客户信息
      * @return
      */
-    public List<Customer> findAllCustomerBy() {
-        return customerMapper.findAll();
+    public List<Customer> findAllCustomer() {
+        Integer userid = null;
+        if(ShiroUtil.isEmployee()) {
+            userid = ShiroUtil.getCurrentUserId();
+        }
+        return customerMapper.findAll(userid);
     }
+
 }

@@ -5,6 +5,8 @@ import java.sql.Timestamp;
 
 public class SalesLog implements Serializable{
     private static final long serialVersionUID = -6776129319579505784L;
+    public static final String LOG_TYPE_AUTO="auto";
+    public static final String LOG_TYPE_INPUT="input";
     private Integer id;
     private Integer salesid;
     private String context;

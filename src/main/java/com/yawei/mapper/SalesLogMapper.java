@@ -7,8 +7,6 @@ import java.util.List;
 
 public interface SalesLogMapper {
 
-    List<SalesLog> findBySalesid(Integer id);
-
     void save(SalesLog salesLog);
 
     List<SalesLog> findBySalesId(Integer id);

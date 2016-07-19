@@ -8,13 +8,11 @@ import org.apache.commons.io.IOUtils;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -128,25 +126,13 @@ public class SalesService {
     }
 
     /**
-     * 修改销售机会信息
-     *
-     * @param sales
-     */
-    public void editSales(Sales sales) {
-        Integer salesid = sales.getId();
-        sales = salesMapper.findById(salesid);
-
-        salesMapper.update(sales);
-    }
-
-    /**
      * 根据当前机会的id查找机会的日志记录
      *
-     * @param id
+     * @param Id
      * @return
      */
-    public List<SalesLog> findSalesLogBySalesid(Integer id) {
-        return salesLogMapper.findBySalesid(id);
+    public List<SalesLog> findSalesLogBySalesid(Integer Id) {
+        return salesLogMapper.findBySalesId(Id);
     }
 
     /**
@@ -159,6 +145,16 @@ public class SalesService {
         return salesFileMapper.findBySalesid(id);
     }
 
+
+    /**
+     * 根据客户Id查找销售机会
+     *
+     * @param custid
+     * @return
+     */
+    public List<Sales> findSalesByCustid(Integer custid) {
+        return salesMapper.findByCustid(custid);
+    }
 
     /**
      * 上传保存文件
@@ -177,19 +173,15 @@ public class SalesService {
         }
 
         try {
-
             FileOutputStream outputStream = new FileOutputStream(new File(savePath, newFileName));
             IOUtils.copy(inputStream, outputStream);
-
             outputStream.flush();
             outputStream.close();
             inputStream.close();
-
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            throw new RuntimeException(ex);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-
         SalesFile salesFile = new SalesFile();
         salesFile.setSalesid(salesid);
         salesFile.setContenttype(contentType);
@@ -198,7 +190,6 @@ public class SalesService {
         salesFile.setSize(size);
 
         salesFileMapper.save(salesFile);
-
     }
 
     /**
@@ -212,10 +203,10 @@ public class SalesService {
 
         Sales sales = salesMapper.findById(id);
         sales.setProgress(progress);
-        sales.setLasttime(DateTime.now().toString());
+        sales.setLasttime(DateTime.now().toString("YYYY-MM-dd"));
 
         if ("完成交易".equals(progress)) {
-            sales.setSuccesstime(DateTime.now().toString());
+            sales.setSuccesstime(DateTime.now().toString("YYYY-MM-dd"));
         }
         salesMapper.update(sales);
 
@@ -234,7 +225,7 @@ public class SalesService {
      */
     @Transactional
     public void saveLog(SalesLog salesLog) {
-        salesLog.setType(SalesLog.LOG_TYPE_AUTO);
+        salesLog.setType(SalesLog.LOG_TYPE_INPUT);
         salesLogMapper.save(salesLog);
 
         Sales sales = salesMapper.findById(salesLog.getSalesid());
@@ -261,12 +252,12 @@ public class SalesService {
     public void delSales(Integer id) {
         Sales sales = salesMapper.findById(id);
         if (sales != null) {
-            //删除对应的文件
-            List<SalesFile> salesFileList = salesFileMapper.findBySalesId(id);
+            //删除所对应的文件
+            List<SalesFile> salesFileList = salesFileMapper.findBySalesid(id);
             if (!salesFileList.isEmpty()) {
                 salesFileMapper.del(salesFileList);
             }
-            //删除对应的跟进
+            //删除对应的跟进记录
             List<SalesLog> salesLogList = salesLogMapper.findBySalesId(id);
             if (!salesLogList.isEmpty()) {
                 salesLogMapper.del(salesLogList);

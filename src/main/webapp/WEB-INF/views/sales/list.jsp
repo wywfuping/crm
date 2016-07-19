@@ -55,6 +55,7 @@
                         <input type="hidden" id="end_time">
                         <input type="text" class="form-control" id="search_name" placeholder="机会名称">
                         <select class="form-control" id="search_progress" name="progress">
+                            <option value=""></option>
                             <option value="初次接触">初次接触</option>
                             <option value="确认意向">确认意向</option>
                             <option value="提供合同">提供合同</option>
@@ -62,7 +63,7 @@
                             <option value="交易搁置">交易搁置</option>
                         </select>
                         <input type="text" id="rangepicker" class="form-control" placeholder="跟进时间">
-                        <button class="btn btn-default" id="searchBtn"><i class="fa fa-search"></i> 搜索</button>
+                        <button type="button" class="btn btn-default" id="searchBtn"><i class="fa fa-search"></i> 搜索</button>
                     </form>
                 </div>
             </div>
@@ -85,7 +86,6 @@
                             <th>当前进度</th>
                             <th>最后跟进时间</th>
                             <th>所属员工</th>
-                            <th>操作</th>
                         </tr>
                         </thead>
                         <tboby></tboby>

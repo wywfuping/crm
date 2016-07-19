@@ -9,6 +9,7 @@ import com.yawei.service.CustomerService;
 import com.yawei.service.SalesService;
 import com.yawei.util.ShiroUtil;
 import com.yawei.util.Strings;
+import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.MediaType;
@@ -103,10 +104,10 @@ public class SalesController {
         model.addAttribute("sales", sales);
         //根据当前机会的id查找机会的日志记录
         List<SalesLog> salesLogList = salesService.findSalesLogBySalesid(id);
-        model.addAttribute(salesLogList);
+        model.addAttribute("salesLogList",salesLogList);
         //根据当前机会的id查找机会的文件列表
         List<SalesFile> salesFileList = salesService.findSalesFileBySalesid(id);
-        model.addAttribute(salesFileList);
+        model.addAttribute("salesFileList",salesFileList);
 
         return "sales/view";
     }
@@ -118,7 +119,7 @@ public class SalesController {
      * @param salesid
      * @return
      */
-    @RequestMapping(value = "/upload", method = RequestMethod.POST)
+    @RequestMapping(value = "/file/upload", method = RequestMethod.POST)
     @ResponseBody
     public String uploadFile(MultipartFile file, Integer salesid) throws IOException {
         salesService.uploadFile(file.getInputStream(), file.getOriginalFilename(), file.getContentType(), file.getSize(), salesid);
@@ -131,13 +132,15 @@ public class SalesController {
      * @param id
      * @return
      */
-    @RequestMapping(value = "file/{id:\\d+}/download", method = RequestMethod.GET)
-    public ResponseEntity<InputStreamResource> downLoadFile(@PathVariable Integer id) throws FileNotFoundException, UnsupportedEncodingException {
+    @RequestMapping(value = "/file/{id:\\d+}/download", method = RequestMethod.GET)
+    public ResponseEntity<InputStreamResource> downLoadFile(@PathVariable Integer id) throws IOException {
         SalesFile salesFile = salesService.findSalesFileById(id);
         if (salesFile == null) {
             throw new NotFindException();
         }
         File file = new File(savePath, salesFile.getFilename());
+        //System.out.println(file.getAbsolutePath());
+        //System.out.println(file.getPath());
         if (!file.exists()) {
             throw new NotFindException();
         }
@@ -161,6 +164,7 @@ public class SalesController {
     @RequestMapping(value = "/new", method = RequestMethod.POST)
     @ResponseBody
     public String saveSales(Sales sales) {
+        sales.setLasttime(DateTime.now().toString("YYYY-MM-dd"));
         salesService.saveSales(sales);
         return "success";
     }

@@ -15,9 +15,6 @@
         )
     </delete>
 
-    <select id="findBySalesid" resultType="SalesLog">
-        select * from t_sales_log WHERE salesid=#{id}
-    </select>
     <select id="findBySalesId" resultType="com.yawei.pojo.SalesLog">
         select * from t_sales_log WHERE salesid=#{id} order by id desc
     </select>

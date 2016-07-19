@@ -65,5 +65,9 @@
     <select id="findCustomerByCompanyid" resultType="Customer">
         select * from t_customer where companyid=#{id}
     </select>
+    <select id="findNewCustCount" resultType="java.lang.Long">
+        select count(*) from t_customer
+        WHERE DATE(createtime) >= #{start} and DATE(createtime) &lt;= #{end}
+    </select>
 
 </mapper>

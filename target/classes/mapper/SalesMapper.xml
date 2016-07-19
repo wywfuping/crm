@@ -6,12 +6,9 @@
 
     <insert id="save" useGeneratedKeys="true" keyProperty="id">
         insert into t_sales (name, price, progress, lasttime, successtime, custid, userid, custname, username)
-        values (#{name}, #{price}, #{progress}, #{lasttime}, #{successtime}, #{custid}, #{userid}, #{custname}, #{username});
+        values (#{name}, #{price}, #{progress}, #{lasttime}, #{successtime}, #{custid}, #{userid}, #{custname}, #{username})
     </insert>
 
-    <delete id="delete">
-        delete FROM t_sales where id=#{id}
-    </delete>
     <delete id="del">
         DELETE FROM t_sales WHERE id = #{id}
     </delete>
@@ -24,10 +21,10 @@
         select * from t_sales WHERE id=#{id}
     </select>
     <select id="findByCustid" resultType="Sales">
-        select * from t_sales WHERE custid=#{id} order by id desc
+        select * from t_sales WHERE custid=#{custid} order by id desc
     </select>
     <select id="findByUserid" resultType="Sales">
-        select * from t_sales WHERE userid=#{id}
+        select * from t_sales WHERE userid=#{userid}
     </select>
     <select id="findSalesByParam" resultType="Sales">
         select * from t_sales
@@ -77,6 +74,14 @@
                 and date(lasttime) &lt;= #{enddate}
             </if>
         </where>
+    </select>
+    <select id="findSalesSuccessCount" resultType="java.lang.Long">
+        select count(*) from t_sales
+        WHERE date(successtime)  >= #{start} and date(successtime) &lt;= #{end} and progress=#{state}
+    </select>
+    <select id="findSalesPrice" resultType="java.lang.Float">
+        select sum(price) from t_sales
+        WHERE date(successtime)  >= #{start} and date(successtime) &lt;= #{end} and progress=#{state}
     </select>
 
 

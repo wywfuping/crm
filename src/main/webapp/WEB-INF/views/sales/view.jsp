@@ -111,14 +111,11 @@
                 </div>
                 <%--相关资料--%>
                 <div class="col-md-4">
-                    <div class="box box-default collapsed-box">
+                    <div class="box box-default">
                         <div class="box-header with-border">
                             <h3 class="box-title"><i class="fa fa-file-o"></i> 相关资料</h3>
                             <div class="box-tools pull-right">
-                                <div id="uploadBtn"><span class="text"><i class="fa fa-upload"></i> 上传文件</span>
-                                    <button type="button" class="btn btn-box-tool pull-right" data-widget="collapse"><i class="fa fa-plus"></i></button>
-                                </div>
-
+                                <div id="uploadBtn"><span class="text"><i class="fa fa-upload"></i> 上传文件</span></div>
                             </div>
                         </div>
 
@@ -161,7 +158,7 @@
             </div>
             <div class="modal-body">
                 <form id="newLogForm" action="/sales/log/new" method="post">
-                    <input type="hidden" id="${sales.id}" name="salesid">
+                    <input type="hidden" value="${sales.id}" name="salesid">
                     <div class="form-group">
                        <textarea id="context" name="context"></textarea>
                     </div>
@@ -185,7 +182,7 @@
             </div>
             <div class="modal-body">
                 <form id="progressForm" action="/sales/progress/edit" method="post">
-                    <input type="hidden" id="${sales.id}" name="id">
+                    <input type="hidden" value="${sales.id}" name="id">
                     <div class="form-group">
                         <label>当前进度</label>
                         <select class="form-control" name="progress">
@@ -283,12 +280,12 @@
         });
 
         uploader.on( 'uploadComplete', function( file ) {
-            $("#uploadBtn .text").html('<i class="fa fa-upload"></i>').removeAttr("disabled");;
+            $("#uploadBtn .text").html('<i class="fa fa-upload"></i>').removeAttr("disabled");
         });
 
         <shiro:hasRole name="经理">
         //删除销售机会
-        $("#delBtn").click(function(){
+        $("#delSalesBtn").click(function(){
             if(confirm("确定要删除该销售机会吗")) {
                 window.location.href = "/sales/del/${sales.id}";
             }

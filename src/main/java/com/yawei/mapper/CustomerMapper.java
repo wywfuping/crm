@@ -2,6 +2,8 @@ package com.yawei.mapper;
 
 
 import com.yawei.pojo.Customer;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 import java.util.Map;
 
@@ -22,4 +24,6 @@ public interface CustomerMapper {
     List<Customer> findCustomerByCompanyid(Integer id);
 
     List<Customer> findAll(Integer userid);
+
+    Long findNewCustCount(@Param("start") String start, @Param("end") String end);
 }

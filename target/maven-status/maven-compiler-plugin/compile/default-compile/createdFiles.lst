@@ -36,8 +36,10 @@ com\yawei\controller\DocumentController.class
 com\yawei\controller\CustomerController.class
 com\yawei\controller\HomeController.class
 com\yawei\service\NoticeService.class
+com\yawei\controller\ChartService.class
 com\yawei\pojo\Customer.class
 com\yawei\pojo\Notice.class
+com\yawei\controller\ChartController.class
 com\yawei\util\ShiroUtil.class
 com\yawei\controller\AdminController.class
 com\yawei\pojo\User.class

@@ -10,6 +10,7 @@ com\yawei\dto\DataTablesResult.class
 com\yawei\controller\FilePreController.class
 com\yawei\mapper\NoticeMapper.class
 com\yawei\Test.class
+com\yawei\service\ChartService.class
 com\yawei\controller\SalesController.class
 com\yawei\util\Strings.class
 com\yawei\mapper\TaskMapper.class
@@ -36,7 +37,6 @@ com\yawei\controller\DocumentController.class
 com\yawei\controller\CustomerController.class
 com\yawei\controller\HomeController.class
 com\yawei\service\NoticeService.class
-com\yawei\controller\ChartService.class
 com\yawei\pojo\Customer.class
 com\yawei\pojo\Notice.class
 com\yawei\controller\ChartController.class

@@ -23,4 +23,8 @@ public interface SalesMapper {
     Long findSalesSuccessCount(@Param("start") String start,@Param("end") String end,@Param("state") String state);
 
     Float findSalesPrice(@Param("start") String start,@Param("end") String end,@Param("state") String state);
+
+    List<Map<String,Object>> userSalesPrice(@Param("start") String start,@Param("end") String end);
+
+    List<Map<String,Object>> progressData(@Param("start") String start,@Param("end") String end);
 }

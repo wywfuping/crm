@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - yawei_crm@localhost" uuid="5335ef71-8694-48e8-a383-13b3a87c01b3">
+    <data-source name="MySQL - yawei_crm@localhost [2]" uuid="04c19d8b-823e-49a7-82c9-e29d759e182e">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <schema-pattern>yawei_crm.*</schema-pattern>

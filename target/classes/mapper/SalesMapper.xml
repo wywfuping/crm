@@ -83,6 +83,20 @@
         select sum(price) from t_sales
         WHERE date(successtime)  >= #{start} and date(successtime) &lt;= #{end} and progress=#{state}
     </select>
+    <select id="userSalesPrice" resultType="java.util.Map">
+        SELECT user.realname,(SELECT ifnull(sum(price),0) FROM t_sales WHERE userid=user.id and
+        DATE(successtime) >= #{start} and DATE(successtime) &lt;= #{end})
+        as price from ( SELECT id,realname FROM t_user) as user
+    </select>
+    <select id="progressData" resultType="java.util.Map">
+        SELECT temp.custype as 'name',(SELECT count(*) from t_sales WHERE t_sales.progress=temp.custype AND
+        DATE(createtime) >= #{start} and DATE(createtime) &lt;=#{end}) as 'value'
+        FROM (SELECT '初次接触' as 'custype'
+        UNION SELECT '确认意向'
+        UNION SELECT '提供合同'
+        UNION SELECT '完成交易'
+        UNION SELECT '交易搁置') as temp
+    </select>
 
 
 </mapper>

@@ -23,7 +23,7 @@ public interface CustomerMapper {
 
     List<Customer> findCustomerByCompanyid(Integer id);
 
-    List<Customer> findAll(Integer userid);
+    List<Customer> findAll(@Param("userid") Integer userid);
 
     Long findNewCustCount(@Param("start") String start, @Param("end") String end);
 }

@@ -31,12 +31,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/target/classes/com/yawei/util/Page.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/target/classes/com/yawei/web/HomeServlet.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/home_jsp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chart/home.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/plugins/chartjs/Chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/plugins/chartjs/Chart.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/static/plugins/chartjs/echarts.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../javase/.idea/.name" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../javase/.idea/compiler.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../javase/.idea/copyright/profiles_settings.xml" />
@@ -266,49 +260,36 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/home_jsp.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../webapp/webapp.iml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2016-07-18" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/customer/list_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/customer/list_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/sales/list_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/sales/list_jsp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/yawei/controller/ChartService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2016-07-19" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../mybatis/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_7.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../mybatis/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_7.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/../mybatis/src/main/resources/logback.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yawei/controller/SalesController.class" afterPath="$PROJECT_DIR$/target/classes/com/yawei/controller/SalesController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yawei/controller/TaskController.class" afterPath="$PROJECT_DIR$/target/classes/com/yawei/controller/TaskController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yawei/mapper/SalesFileMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/yawei/mapper/SalesFileMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yawei/mapper/SalesLogMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/yawei/mapper/SalesLogMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yawei/controller/ChartController.class" afterPath="$PROJECT_DIR$/target/classes/com/yawei/controller/ChartController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yawei/mapper/SalesMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/yawei/mapper/SalesMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yawei/service/SalesService.class" afterPath="$PROJECT_DIR$/target/classes/com/yawei/service/SalesService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/yawei/service/TaskService.class" afterPath="$PROJECT_DIR$/target/classes/com/yawei/service/TaskService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/task/list_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/task/list_jsp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/chart/home_jsp.class" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/chart/home_jsp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/../mybatis/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis/target/classes/com/yawei/pojo/User.class" afterPath="$PROJECT_DIR$/../mybatis/target/classes/com/yawei/pojo/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis/target/classes/com/yawei/util/MybatisUtil.class" afterPath="$PROJECT_DIR$/../mybatis/target/classes/com/yawei/util/MybatisUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis/target/test-classes/com/yawei/test/MybatisTestCase.class" afterPath="$PROJECT_DIR$/../mybatis/target/test-classes/com/yawei/test/MybatisTestCase.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../web" afterPath="$PROJECT_DIR$/../web" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yawei/controller/SalesController.java" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/controller/SalesController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yawei/controller/TaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/controller/TaskController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartController.java" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yawei/mapper/CustomerMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/mapper/CustomerMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesFileMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesFileMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesLogMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesLogMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yawei/service/SalesService.java" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/service/SalesService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yawei/service/TaskService.java" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/service/TaskService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/leftside.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/leftside.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/view.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/view.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/task/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/task/list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.properties" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/SalesFileMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SalesFileMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/SalesLogMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SalesLogMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chart/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chart/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/new.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/new.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/view.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/view.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ssm.iml" afterPath="$PROJECT_DIR$/ssm.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/SalesMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SalesMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/chart/home_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/chart/home_jsp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/leftSide_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/include/leftSide_jsp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/login_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/login_jsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/task/list_jsp.java" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/views/task/list_jsp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis/.idea/artifacts/mybatis_war_exploded.xml" afterPath="$PROJECT_DIR$/../mybatis/.idea/artifacts/mybatis_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/../mybatis/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../mybatis/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/../mybatis/.idea/dataSources.xml" />
@@ -336,6 +317,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webapp/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/../webapp/src/main/resources/config.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webapp/src/main/webapp/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/../webapp/src/main/webapp/WEB-INF/views/home.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../webapp/src/test/java/com/yawei/service/MovieServiceTestCase.java" afterPath="$PROJECT_DIR$/../webapp/src/test/java/com/yawei/service/MovieServiceTestCase.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartService.java" afterPath="$PROJECT_DIR$/src/main/java/com/yawei/service/ChartService.java" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/../mybatis/target/classes/logback.xml" afterPath="$PROJECT_DIR$/../webapp/target/classes/logback.xml" />
     </list>
     <ignored path="ssm.iws" />
@@ -366,7 +348,21 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="MySQL - yawei_crm@localhost" />
+        <option name="myItemId" value="MySQL - yawei_crm@localhost [2]" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - yawei_crm@localhost [2]" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_sales" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -377,36 +373,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chart/home.jsp">
+      <file leaf-file-name="TaskService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/service/TaskService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5899015">
-              <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChartController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartController.java">
+      <file leaf-file-name="TaskController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/TaskController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/mapper/TaskMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/task/list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.069767">
+              <caret line="71" column="40" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chart/home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="6.418605">
+              <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ChartService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/service/ChartService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="101" column="46" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -415,51 +437,65 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CustomerMapper.xml">
+      <file leaf-file-name="SalesMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SalesMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.16279">
-              <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+            <state vertical-scroll-proportion="-1.2093023">
+              <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
               <folding>
-                <marker date="1468931686902" expanded="true" signature="242:470" placeholder="insert into t_customer... " />
-                <marker date="1468931686902" expanded="true" signature="518:750" placeholder="update t_cus... " />
-                <marker date="1468931686902" expanded="true" signature="795:832" placeholder="delete FROM " />
-                <marker date="1468931686902" expanded="true" signature="904:943" placeholder="select * fro... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="1022:1068" placeholder="select * fro... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="1143:1167" placeholder="select * fro... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="1143:1630" placeholder="select * fro... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="1701:1725" placeholder="select * fro... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="1701:1892" placeholder="select * fro... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="1957:1988" placeholder="select count... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="2064:2095" placeholder="select count... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="2574:2617" placeholder="select * fro... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="2704:2728" placeholder="select * fro... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="2704:2750" placeholder="select * fro... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="2836:2867" placeholder="select * fro... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="2836:2933" placeholder="select count... t_customer" />
-                <marker date="1468931686902" expanded="true" signature="2836:2944" placeholder="select count... t_customer" />
+                <marker date="1468940782851" expanded="true" signature="293:520" placeholder="insert into t_sales... " />
+                <marker date="1468940782851" expanded="true" signature="566:602" placeholder="DELETE FROM " />
+                <marker date="1468940782851" expanded="true" signature="651:763" placeholder="update t_sal... " />
+                <marker date="1468940782851" expanded="true" signature="832:868" placeholder="select * fro... t_sales" />
+                <marker date="1468940782851" expanded="true" signature="941:1002" placeholder="select * fro... t_sales" />
+                <marker date="1468940782851" expanded="true" signature="1075:1119" placeholder="select * fro... t_sales" />
+                <marker date="1468940782851" expanded="true" signature="1196:1914" placeholder="select * fro... t_sales" />
+                <marker date="1468940782851" expanded="true" signature="1983:2004" placeholder="select * fro... t_sales" />
+                <marker date="1468940782851" expanded="true" signature="2069:2097" placeholder="select count... t_sales" />
+                <marker date="1468940782851" expanded="true" signature="2939:3069" placeholder="select count... t_sales" />
+                <marker date="1468940782851" expanded="true" signature="3154:3286" placeholder="select sum(p... t_sales" />
+                <marker date="1468940782851" expanded="true" signature="3369:3594" placeholder="SELECT user.... id" />
+                <marker date="1468940782851" expanded="true" signature="3555:3585" placeholder="SELECT id,re... t_user" />
+                <marker date="1468940782851" expanded="true" signature="3675:4018" placeholder="SELECT temp.... temp" />
+                <marker date="1468940782851" expanded="true" signature="3871:3897" placeholder="SELECT '初次接触... " />
+                <marker date="1468940782851" expanded="true" signature="3912:3925" placeholder="SELECT '确认意向... " />
+                <marker date="1468940782851" expanded="true" signature="3940:3953" placeholder="SELECT '提供合同... " />
+                <marker date="1468940782851" expanded="true" signature="3968:3981" placeholder="SELECT '完成交易... " />
+                <marker date="1468940782851" expanded="true" signature="3996:4009" placeholder="SELECT '交易搁置... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="yawei_crm.t_sales" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/35737c08/5335ef71-8694-48e8-a383-13b3a87c01b3/yawei_crm.t_sales">
+        <entry file="dbDummy://dbtable:/35737c08/04c19d8b-823e-49a7-82c9-e29d759e182e/yawei_crm.t_sales">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
             </state>
           </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+        </entry>
+      </file>
+      <file leaf-file-name="ChartController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.5169591">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -469,7 +505,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="mybatis-config" />
         <option value="mybatis-generator-config" />
         <option value="web" />
         <option value="spring-beans.schema" />
@@ -478,6 +513,8 @@
         <option value="Interface" />
         <option value="Mybatis Mapper" />
         <option value="Class" />
+        <option value="mybatis-config" />
+        <option value="mapper" />
       </list>
     </option>
   </component>
@@ -492,9 +529,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/yawei/mapper/CustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/new.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/view.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/pojo/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/document/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/util/Strings.java" />
@@ -517,10 +551,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/pojo/SalesLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/pojo/SalesFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/pojo/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yawei/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/mapper/TaskMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/TaskMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/task/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/controller/TaskController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/service/TaskService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/list.jsp" />
@@ -528,7 +560,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/SalesLogMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesFileMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/SalesFileMapper.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5335ef71-8694-48e8-a383-13b3a87c01b3/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/view.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/service/SalesService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
@@ -536,13 +567,19 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/include/leftSide.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chart.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home/chart.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yawei/mapper/CustomerMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CustomerMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yawei/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesMapper.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/5335ef71-8694-48e8-a383-13b3a87c01b3/console.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/SalesMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/task/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yawei/mapper/CustomerMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/new.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/view.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chart/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yawei/service/ChartService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartController.java" />
       </list>
     </option>
   </component>
@@ -567,8 +604,24 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="width" value="1932" />
     <option name="height" value="1048" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -701,7 +754,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="task" />
+              <option name="myItemId" value="notice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -727,7 +780,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chart" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -779,66 +862,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yawei" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ssm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="crm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yawei" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -847,25 +870,20 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="prop_add_unversioned_files" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/SoftwarePackage/cmder/vendor/git-for-windows/bin/git.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\myidea\project\crm\src\main\webapp\WEB-INF\views\home" />
-      <recent name="D:\myidea\project\crm\src\main\webapp\WEB-INF\views" />
-      <recent name="D:\myidea\project\crm\src\main\webapp\WEB-INF\views\error" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yawei.service" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.yawei" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.yawei.exception" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\myidea\project\crm\src\main\webapp\WEB-INF\views\chart" />
@@ -873,6 +891,14 @@
       <recent name="D:\myidea\project\crm\src\main\webapp\static\plugins\chartjs" />
       <recent name="D:\myidea\project\crm\src\main\webapp\static\plugins" />
       <recent name="D:\myidea\project\crm\src\main\webapp\WEB-INF\views\task" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.yawei.exception" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\myidea\project\crm\src\main\webapp\WEB-INF\views\home" />
+      <recent name="D:\myidea\project\crm\src\main\webapp\WEB-INF\views" />
+      <recent name="D:\myidea\project\crm\src\main\webapp\WEB-INF\views\error" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.tomcat">
@@ -1319,6 +1345,67 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_ssm" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51912" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -1418,7 +1505,21 @@
       <workItem from="1468743625399" duration="6844000" />
       <workItem from="1468802073866" duration="31224000" />
       <workItem from="1468888551780" duration="10557000" />
-      <workItem from="1468918006508" duration="13258000" />
+      <workItem from="1468918006508" duration="20571000" />
+      <workItem from="1468974396468" duration="225000" />
+      <workItem from="1468975441476" duration="100000" />
+      <workItem from="1468975643678" duration="19000" />
+      <workItem from="1468975743455" duration="505000" />
+      <workItem from="1468976606457" duration="22000" />
+      <workItem from="1468977719181" duration="164000" />
+      <workItem from="1468978554075" duration="41000" />
+      <workItem from="1468979893023" duration="112000" />
+      <workItem from="1468980642479" duration="68000" />
+      <workItem from="1468981201687" duration="1160000" />
+      <workItem from="1468982452311" duration="1343000" />
+      <workItem from="1468983831058" duration="2121000" />
+      <workItem from="1468986028077" duration="2054000" />
+      <workItem from="1469017003499" duration="3888000" />
     </task>
     <servers />
   </component>
@@ -1455,54 +1556,55 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="410512000" />
+    <option name="totallyTimeSpent" value="429647000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7519729" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.50208336" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54565954" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17023554" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19978517" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13436832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13426423" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46674183" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4171364" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845894" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845894" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845894" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7519729" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22430407" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13436832" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.994363" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.416009" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845894" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1512,8 +1614,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54565954" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25642398" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18629551" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1544,82 +1646,27 @@
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ssm" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="crm" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/35737c08/5335ef71-8694-48e8-a383-13b3a87c01b3/yawei_crm.t_role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/35737c08/5335ef71-8694-48e8-a383-13b3a87c01b3/yawei_crm.t_customer">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/util/TimeAgo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35239208">
-          <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.363636">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <marker date="1468640221726" expanded="true" signature="10608:10622" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/customer/view.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33620688">
-          <caret line="132" column="46" selection-start-line="132" selection-start-column="46" selection-end-line="132" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.043274853">
-          <caret line="126" column="32" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/plugins/timeago/timeago.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/pojo/SalesLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69239765">
           <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1627,20 +1674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5825243">
           <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-          <folding>
-            <element signature="e#1324#1325#0" expanded="false" />
-            <element signature="e#1351#1352#0" expanded="false" />
-            <element signature="e#1389#1390#0" expanded="false" />
-            <element signature="e#1421#1422#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17309941">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1648,7 +1681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56725144">
           <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1666,71 +1698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/service/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3847953">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/mapper/TaskMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38947368">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/35737c08/5335ef71-8694-48e8-a383-13b3a87c01b3/yawei_crm.t_sales_log">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="190" column="26" selection-start-line="190" selection-start-column="26" selection-end-line="190" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.6.RELEASE/spring-core-4.2.6.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3828829">
           <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5335ef71-8694-48e8-a383-13b3a87c01b3/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19892474">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1738,12 +1709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1468379991013" expanded="true" signature="252:366" placeholder="insert into t_notice... " />
-            <marker date="1468379991013" expanded="true" signature="443:490" placeholder="select * fro... t_notice" />
-            <marker date="1468379991013" expanded="true" signature="565:594" placeholder="select count... t_notice" />
-            <marker date="1468379991013" expanded="true" signature="685:722" placeholder="select * fro... t_notice" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1751,12 +1716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1468413495967" expanded="true" signature="255:436" placeholder="insert into t_document... " />
-            <marker date="1468413495967" expanded="true" signature="484:521" placeholder="DELETE FROM " />
-            <marker date="1468413495967" expanded="true" signature="593:632" placeholder="select * fro... t_document" />
-            <marker date="1468413495967" expanded="true" signature="705:763" placeholder="select * fro... t_document" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1764,12 +1723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77463055">
           <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-          <folding>
-            <marker date="1468902643386" expanded="true" signature="254:349" placeholder="insert into t_sales_log... " />
-            <marker date="1468902643386" expanded="true" signature="394:426" placeholder="DELETE FROM " />
-            <marker date="1468902643386" expanded="true" signature="394:543" placeholder="DELETE FROM " />
-            <marker date="1468902643386" expanded="true" signature="636:698" placeholder="select * fro... t_sales_log" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1777,14 +1730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0024631">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <marker date="1468851722502" expanded="true" signature="291:504" placeholder="insert into t_task... " />
-            <marker date="1468851722502" expanded="true" signature="577:620" placeholder="select * fro... t_task" />
-            <marker date="1468851722502" expanded="true" signature="689:724" placeholder="select * fro... t_task" />
-            <marker date="1468851722502" expanded="true" signature="814:905" placeholder="select * fro... t_task" />
-            <marker date="1468851722502" expanded="true" signature="951:984" placeholder="DELETE FROM " />
-            <marker date="1468851722502" expanded="true" signature="1032:1096" placeholder="UPDATE t_tas... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1792,9 +1737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.7315271">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1468133860445" expanded="true" signature="254:355" placeholder="insert into t_userlog... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1802,18 +1744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1468589191664" expanded="true" signature="257:412" placeholder="INSERT into t_user... " />
-            <marker date="1468589191664" expanded="true" signature="486:660" placeholder="select * fro... t_user" />
-            <marker date="1468589191664" expanded="true" signature="731:816" placeholder="select * fro... t_user" />
-            <marker date="1468589191664" expanded="true" signature="731:1146" placeholder="select t_use... t_user" />
-            <marker date="1468589191664" expanded="true" signature="1211:1238" placeholder="select count... t_user" />
-            <marker date="1468589191664" expanded="true" signature="1310:1337" placeholder="select count... t_user" />
-            <marker date="1468589191664" expanded="true" signature="1619:1655" placeholder="select * fro... t_user" />
-            <marker date="1468589191664" expanded="true" signature="1620:1655" placeholder="SELECT * fro... t_user" />
-            <marker date="1468589191664" expanded="true" signature="1722:1742" placeholder="select * fro... t_user" />
-            <marker date="1468589191664" expanded="true" signature="1795:2343" placeholder="update t_use... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1821,15 +1751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17309941">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.99487835">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1837,7 +1758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1845,7 +1765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36266667">
           <caret line="425" column="19" selection-start-line="425" selection-start-column="19" selection-end-line="425" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1853,7 +1772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34619883">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1861,13 +1779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.591133">
           <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding>
-            <marker date="1468919865129" expanded="true" signature="255:397" placeholder="insert into t_sales_file... " />
-            <marker date="1468919865129" expanded="true" signature="442:476" placeholder="DELETE FROM " />
-            <marker date="1468919865129" expanded="true" signature="442:594" placeholder="DELETE FROM " />
-            <marker date="1468919865129" expanded="true" signature="682:723" placeholder="select * fro... t_sales_file" />
-            <marker date="1468919865129" expanded="true" signature="816:879" placeholder="select * fro... t_sales_file" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1875,9 +1786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.697076">
           <caret line="195" column="13" selection-start-line="195" selection-start-column="13" selection-end-line="195" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1885,25 +1793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34772727">
           <caret line="229" column="0" selection-start-line="229" selection-start-column="0" selection-end-line="229" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/view.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41009852">
-          <caret line="127" column="68" selection-start-line="127" selection-start-column="68" selection-end-line="127" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/SalesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17777778">
-          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1911,20 +1800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30292398">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/35737c08/5335ef71-8694-48e8-a383-13b3a87c01b3/yawei_crm.t_sales_file">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1932,7 +1807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1940,15 +1814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1847291">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1956,73 +1821,234 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5406404">
           <caret line="30" column="86" selection-start-line="30" selection-start-column="86" selection-end-line="30" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.053497944">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/pojo/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.218107">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/SalesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40584797">
+          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5239766">
+          <caret line="188" column="14" selection-start-line="188" selection-start-column="14" selection-end-line="188" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/FilePreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33522084">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/task/list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50615764">
-          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5659411">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/mapper/CustomerMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-shiro.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65380114">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.8706786">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SalesMapper.xml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b62ec660-50ad-4084-9ad2-429b91ecd1ac/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5899015">
-          <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
-          <folding>
-            <marker date="1468932776386" expanded="true" signature="293:520" placeholder="insert into t_sales... " />
-            <marker date="1468932776386" expanded="true" signature="566:602" placeholder="DELETE FROM " />
-            <marker date="1468932776386" expanded="true" signature="651:763" placeholder="update t_sal... " />
-            <marker date="1468932776386" expanded="true" signature="832:868" placeholder="select * fro... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="941:985" placeholder="select * fro... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="941:1002" placeholder="select * fro... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="1075:1119" placeholder="select * fro... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="1196:1217" placeholder="select * fro... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="1196:1914" placeholder="select * fro... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="1983:2004" placeholder="select * fro... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="2069:2097" placeholder="select count... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="2939:3055" placeholder="select count... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="2939:3060" placeholder="select count... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="2939:3069" placeholder="select count... t_sales" />
-            <marker date="1468932776386" expanded="true" signature="3154:3161" placeholder="select * fro... " />
-            <marker date="1468932776386" expanded="true" signature="3154:3286" placeholder="select count... t_sales" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/04c19d8b-823e-49a7-82c9-e29d759e182e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43640608">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CustomerMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.16279">
-          <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.29238328">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
           <folding>
             <marker date="1468931686902" expanded="true" signature="242:470" placeholder="insert into t_customer... " />
             <marker date="1468931686902" expanded="true" signature="518:750" placeholder="update t_cus... " />
             <marker date="1468931686902" expanded="true" signature="795:832" placeholder="delete FROM " />
             <marker date="1468931686902" expanded="true" signature="904:943" placeholder="select * fro... t_customer" />
             <marker date="1468931686902" expanded="true" signature="1022:1068" placeholder="select * fro... t_customer" />
-            <marker date="1468931686902" expanded="true" signature="1143:1167" placeholder="select * fro... t_customer" />
             <marker date="1468931686902" expanded="true" signature="1143:1630" placeholder="select * fro... t_customer" />
-            <marker date="1468931686902" expanded="true" signature="1701:1725" placeholder="select * fro... t_customer" />
             <marker date="1468931686902" expanded="true" signature="1701:1892" placeholder="select * fro... t_customer" />
             <marker date="1468931686902" expanded="true" signature="1957:1988" placeholder="select count... t_customer" />
-            <marker date="1468931686902" expanded="true" signature="2064:2095" placeholder="select count... t_customer" />
             <marker date="1468931686902" expanded="true" signature="2574:2617" placeholder="select * fro... t_customer" />
-            <marker date="1468931686902" expanded="true" signature="2704:2728" placeholder="select * fro... t_customer" />
             <marker date="1468931686902" expanded="true" signature="2704:2750" placeholder="select * fro... t_customer" />
-            <marker date="1468931686902" expanded="true" signature="2836:2867" placeholder="select * fro... t_customer" />
-            <marker date="1468931686902" expanded="true" signature="2836:2933" placeholder="select count... t_customer" />
             <marker date="1468931686902" expanded="true" signature="2836:2944" placeholder="select count... t_customer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/mapper/CustomerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55672514">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/view.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3768473">
+          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/view.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47413793">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5073892">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/sales/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04187192">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice/new.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3768473">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/mapper/TaskMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/task/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.069767">
+          <caret line="71" column="40" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/35737c08/04c19d8b-823e-49a7-82c9-e29d759e182e/yawei_crm.t_sales">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chart/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.418605">
+          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SalesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2093023">
+          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <folding>
+            <marker date="1468940782851" expanded="true" signature="293:520" placeholder="insert into t_sales... " />
+            <marker date="1468940782851" expanded="true" signature="566:602" placeholder="DELETE FROM " />
+            <marker date="1468940782851" expanded="true" signature="651:763" placeholder="update t_sal... " />
+            <marker date="1468940782851" expanded="true" signature="832:868" placeholder="select * fro... t_sales" />
+            <marker date="1468940782851" expanded="true" signature="941:1002" placeholder="select * fro... t_sales" />
+            <marker date="1468940782851" expanded="true" signature="1075:1119" placeholder="select * fro... t_sales" />
+            <marker date="1468940782851" expanded="true" signature="1196:1914" placeholder="select * fro... t_sales" />
+            <marker date="1468940782851" expanded="true" signature="1983:2004" placeholder="select * fro... t_sales" />
+            <marker date="1468940782851" expanded="true" signature="2069:2097" placeholder="select count... t_sales" />
+            <marker date="1468940782851" expanded="true" signature="2939:3069" placeholder="select count... t_sales" />
+            <marker date="1468940782851" expanded="true" signature="3154:3286" placeholder="select sum(p... t_sales" />
+            <marker date="1468940782851" expanded="true" signature="3369:3594" placeholder="SELECT user.... id" />
+            <marker date="1468940782851" expanded="true" signature="3555:3585" placeholder="SELECT id,re... t_user" />
+            <marker date="1468940782851" expanded="true" signature="3675:4018" placeholder="SELECT temp.... temp" />
+            <marker date="1468940782851" expanded="true" signature="3871:3897" placeholder="SELECT '初次接触... " />
+            <marker date="1468940782851" expanded="true" signature="3912:3925" placeholder="SELECT '确认意向... " />
+            <marker date="1468940782851" expanded="true" signature="3940:3953" placeholder="SELECT '提供合同... " />
+            <marker date="1468940782851" expanded="true" signature="3968:3981" placeholder="SELECT '完成交易... " />
+            <marker date="1468940782851" expanded="true" signature="3996:4009" placeholder="SELECT '交易搁置... " />
           </folding>
         </state>
       </provider>
@@ -2030,49 +2056,26 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/mapper/SalesMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/service/ChartService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="101" column="46" selection-start-line="101" selection-start-column="46" selection-end-line="101" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yawei/controller/ChartController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        <state vertical-scroll-proportion="1.5169591">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/35737c08/5335ef71-8694-48e8-a383-13b3a87c01b3/yawei_crm.t_sales">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/chart/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5899015">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2131,6 +2134,18 @@
       <state key="ModuleStructureConfigurable.UI">
         <settings>
           <last-edited>Spring|ssm</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

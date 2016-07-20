@@ -29,11 +29,11 @@ D:\myidea\project\crm\src\main\java\com\yawei\controller\SalesController.java
 D:\myidea\project\crm\src\main\java\com\yawei\exception\ForbiddenException.java
 D:\myidea\project\crm\src\main\java\com\yawei\mapper\UserLogMapper.java
 D:\myidea\project\crm\src\main\java\com\yawei\mapper\TaskMapper.java
+D:\myidea\project\crm\src\main\java\com\yawei\service\ChartService.java
 D:\myidea\project\crm\src\main\java\com\yawei\Test.java
 D:\myidea\project\crm\src\main\java\com\yawei\controller\AdminController.java
 D:\myidea\project\crm\src\main\java\com\yawei\controller\FilePreController.java
 D:\myidea\project\crm\src\main\java\com\yawei\pojo\Task.java
-D:\myidea\project\crm\src\main\java\com\yawei\controller\ChartService.java
 D:\myidea\project\crm\src\main\java\com\yawei\mapper\UserMapper.java
 D:\myidea\project\crm\src\main\java\com\yawei\mapper\DocumentMapper.java
 D:\myidea\project\crm\src\main\java\com\yawei\service\DocumentService.java

@@ -36,7 +36,7 @@
         <section class="content-header">
             <h1>　　</h1>
             <ol class="breadcrumb">
-                <li><a href="/notice"><i class="fa fa-dashboard"></i> 公告列表</a></li>
+                <li><a href="/notice"><i class="fa fa-list"></i> 公告列表</a></li>
                 <li class="active">${notice.title}</li>
             </ol>
         </section>

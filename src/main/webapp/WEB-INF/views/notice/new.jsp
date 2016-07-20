@@ -39,6 +39,7 @@
             <div class="box box-primary">
                 <div class="box-header with-border">
                     <h3 class="box-title">新增公告</h3>
+                    <li class="pull-right"><a href="/notice"><i class="fa fa-list"></i> 公告列表</a></li>
                 </div>
                 <div class="box-body">
                     <form id="newForm" method="post">
